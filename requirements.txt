@@ -1,7 +1,5 @@
 pandas
-numpy
-html5lib
 openpyxl
 requests
-beautifulsoup4
-lxml
+python-dotenv
+geopy
