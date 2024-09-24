@@ -78,16 +78,16 @@ def main(companies: List[str]):
 
     # Save results to Excel file
     df = pd.DataFrame(results)
-    df.to_excel("australian_companies_data.xlsx", index=False)
+    df.to_excel("collected_data/australian_companies_data.xlsx", index=False)
     print("Data saved to australian_companies_data.xlsx")
 
 if __name__ == "__main__":
     australian_companies = [
         "The Recruitment Company", "The Entourage", "TrainTheCrowd", "Atarix", "Glaukos Corporation",
-        "Belloy Avenue Dental", "Tiliter", "Propel Ventures", "Quorum Systems", "Moddex Group",
-        "Green Building Council of Australia", "WW", "DEWC Services", "Sophos", "Kaine Mathrick Tech",
-        # ... (rest of the company list)
-        "Marriott International Australia", "DHL Supply Chain", "Specsavers", "Capgemini Australia", "Story House Early Learning"
+        # "Belloy Avenue Dental", "Tiliter", "Propel Ventures", "Quorum Systems", "Moddex Group",
+        # "Green Building Council of Australia", "WW", "DEWC Services", "Sophos", "Kaine Mathrick Tech",
+        # # ... (rest of the company list)
+        # "Marriott International Australia", "DHL Supply Chain", "Specsavers", "Capgemini Australia", "Story House Early Learning"
     ]
     
     main(australian_companies)
