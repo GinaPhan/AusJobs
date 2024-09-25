@@ -3,3 +3,5 @@ openpyxl
 requests
 python-dotenv
 geopy
+flask
+flask-cors

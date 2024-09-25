@@ -41,7 +41,7 @@ def exponential_backoff(attempt, max_delay=300):
     logging.info(f"Rate limit reached. Backing off for {delay:.2f} seconds")
     time.sleep(delay)
 
-def make_api_request(url, headers, params, max_retries=5):
+def make_api_request(url, headers, params, max_retries=3):
     for attempt in range(max_retries):
         wait_for_rate_limit()
         try:
@@ -50,6 +50,7 @@ def make_api_request(url, headers, params, max_retries=5):
             return response.json()
         except requests.exceptions.HTTPError as e:
             if response.status_code == 429:
+                logging.warning(f"Rate limit reached. Attempt {attempt + 1} of {max_retries}")
                 exponential_backoff(attempt)
             else:
                 logging.error(f"HTTP error occurred: {str(e)}")
@@ -108,7 +109,7 @@ output_sheet = output_workbook.active
 output_sheet.title = "Company Information"
 
 # Initialize headers
-headers = ["Company Name", "LinkedIn URL", "Status"]
+headers = ["Company Name", "LinkedIn URL", "Status", "Error Details"]
 header_row = 1
 for col, header in enumerate(headers, start=1):
     output_sheet.cell(row=header_row, column=col, value=header)
@@ -123,6 +124,7 @@ for row, company_name in enumerate(company_names, start=2):
     if not company_url:
         logging.error(f"Could not find LinkedIn URL for {company_name}")
         output_sheet.cell(row=row, column=3, value="URL not found")
+        output_sheet.cell(row=row, column=4, value="Company LinkedIn profile not found")
         output_workbook.save('company_information_full.xlsx')
         continue
     
@@ -147,6 +149,7 @@ for row, company_name in enumerate(company_names, start=2):
     else:
         logging.error(f"Could not fetch information for {company_name}")
         output_sheet.cell(row=row, column=3, value="Data fetch failed")
+        output_sheet.cell(row=row, column=4, value="API request failed or returned no data")
     
     # Save after each company
     output_workbook.save('company_information_full.xlsx')
