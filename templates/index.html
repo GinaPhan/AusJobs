@@ -9,9 +9,15 @@
         .company-card {
             cursor: pointer;
             transition: transform 0.2s;
+            height: 100%;
         }
         .company-card:hover {
             transform: scale(1.05);
+        }
+        .card-img-top {
+            height: 150px;
+            object-fit: cover;
+            object-position: center;
         }
     </style>
 </head>
@@ -24,7 +30,8 @@
 
     <div class="container mt-4">
         <div id="errorDisplay" class="alert alert-danger" style="display: none;"></div>
-        <div id="companyList" class="row"></div>
+        <div id="companyList" class="row row-cols-1 row-cols-md-2 row-cols-lg-5 g-4"></div>
+        <div id="pagination" class="d-flex justify-content-center mt-4"></div>
     </div>
 
     <div class="modal fade" id="companyModal" tabindex="-1">
@@ -41,11 +48,14 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
+        let currentPage = 1;
+        let totalPages = 1;
+
         function createCompanyCard(company) {
             return `
-                <div class="col-md-4 mb-4">
+                <div class="col">
                     <div class="card company-card" onclick="showCompanyDetails('${encodeURIComponent(company.name)}')">
-                        <img src="${company.profilePicUrl || '/path/to/placeholder-image.jpg'}" class="card-img-top" alt="${company.name} logo">
+                        <img src="${company.profilePicUrl || '/static/placeholder.jpg'}" class="card-img-top" alt="${company.name} logo" onerror="this.onerror=null; this.src='/static/placeholder.jpg';">
                         <div class="card-body">
                             <h5 class="card-title">${company.name}</h5>
                             <p class="card-text">${company.industry || 'Industry not specified'}</p>
@@ -53,6 +63,37 @@
                     </div>
                 </div>
             `;
+        }
+
+        function createPaginationButtons(currentPage, totalPages) {
+            let buttons = '';
+            const maxButtons = 5;
+            let startPage = Math.max(1, currentPage - Math.floor(maxButtons / 2));
+            let endPage = Math.min(totalPages, startPage + maxButtons - 1);
+
+            if (endPage - startPage + 1 < maxButtons) {
+                startPage = Math.max(1, endPage - maxButtons + 1);
+            }
+
+            if (startPage > 1) {
+                buttons += `<button class="btn btn-secondary mx-1" onclick="loadCompanies(1)">1</button>`;
+                if (startPage > 2) {
+                    buttons += `<span class="mx-1">...</span>`;
+                }
+            }
+
+            for (let i = startPage; i <= endPage; i++) {
+                buttons += `<button class="btn btn-${i === currentPage ? 'primary' : 'secondary'} mx-1" onclick="loadCompanies(${i})">${i}</button>`;
+            }
+
+            if (endPage < totalPages) {
+                if (endPage < totalPages - 1) {
+                    buttons += `<span class="mx-1">...</span>`;
+                }
+                buttons += `<button class="btn btn-secondary mx-1" onclick="loadCompanies(${totalPages})">${totalPages}</button>`;
+            }
+
+            return buttons;
         }
 
         async function showCompanyDetails(companyName) {
@@ -69,7 +110,7 @@
 
                 modalTitle.textContent = company['Company Name'];
                 modalBody.innerHTML = `
-                    <img src="${company['profile_pic_url'] || '/path/to/placeholder-image.jpg'}" class="img-fluid mb-3" alt="${company['Company Name']} logo">
+                    <img src="${company['profile_pic_url'] || '/static/placeholder.jpg'}" class="img-fluid mb-3" alt="${company['Company Name']} logo" onerror="this.onerror=null; this.src='/static/placeholder.jpg';">
                     <p><strong>Industry:</strong> ${company['industry'] || 'N/A'}</p>
                     <p><strong>Company Size:</strong> ${company['company_size'] || 'N/A'}</p>
                     <p><strong>Headquarters:</strong> ${company['hq_city'] || 'N/A'}, ${company['hq_state'] || 'N/A'}, ${company['hq_country'] || 'N/A'}</p>
@@ -88,29 +129,37 @@
             }
         }
 
-        document.addEventListener('DOMContentLoaded', async () => {
+        async function loadCompanies(page = 1) {
             const companyList = document.getElementById('companyList');
             const errorDisplay = document.getElementById('errorDisplay');
+            const paginationDiv = document.getElementById('pagination');
             try {
                 console.log('Fetching companies...');
-                const response = await fetch('/api/companies');
+                const response = await fetch(`/api/companies?page=${page}`);
                 console.log('Response status:', response.status);
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
                 }
-                const companies = await response.json();
-                console.log('Companies data:', companies);
+                const data = await response.json();
+                console.log('Companies data:', data);
                 
-                companies.forEach(company => {
+                companyList.innerHTML = '';
+                data.companies.forEach(company => {
                     companyList.innerHTML += createCompanyCard(company);
                 });
+
+                currentPage = data.page;
+                totalPages = Math.ceil(data.total / data.per_page);
+                paginationDiv.innerHTML = createPaginationButtons(currentPage, totalPages);
             } catch (error) {
                 console.error('Error fetching companies:', error);
                 errorDisplay.textContent = `Error: ${error.message}`;
                 errorDisplay.style.display = 'block';
                 companyList.innerHTML = '<p class="text-center">Failed to load companies. Please try again later.</p>';
             }
-        });
+        }
+
+        document.addEventListener('DOMContentLoaded', () => loadCompanies());
     </script>
 </body>
 </html>

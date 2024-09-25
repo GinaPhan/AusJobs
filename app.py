@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, render_template
+from flask import Flask, jsonify, render_template, request
 import pandas as pd
 from urllib.parse import unquote
 import json
@@ -22,7 +22,7 @@ class CustomJSONEncoder(json.JSONEncoder):
 app.json_encoder = CustomJSONEncoder
 
 # Load the Excel file
-df = pd.read_excel('company_information_full.xlsx')
+df = pd.read_excel('company_information_full_100creds.xlsx')
 
 @app.route('/')
 def index():
@@ -30,6 +30,11 @@ def index():
 
 @app.route('/api/companies', methods=['GET'])
 def get_companies():
+    page = int(request.args.get('page', 1))
+    per_page = 10  # Number of companies per page
+    start = (page - 1) * per_page
+    end = start + per_page
+
     # Convert the dataframe to a list of dictionaries
     companies = df.to_dict('records')
     
@@ -40,10 +45,15 @@ def get_companies():
             'industry': company['industry'] if pd.notna(company['industry']) else None,
             'profilePicUrl': company['profile_pic_url'] if pd.notna(company['profile_pic_url']) else None
         }
-        for company in companies
+        for company in companies[start:end]
     ]
     
-    return jsonify(limited_data)
+    return jsonify({
+        'companies': limited_data,
+        'total': len(companies),
+        'page': page,
+        'per_page': per_page
+    })
 
 @app.route('/api/company/<path:name>', methods=['GET'])
 def get_company(name):
