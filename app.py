@@ -22,7 +22,7 @@ class CustomJSONEncoder(json.JSONEncoder):
 app.json_encoder = CustomJSONEncoder
 
 # Load the Excel file
-df = pd.read_excel('company_information_full_100creds.xlsx')
+df = pd.read_excel('company_information_full.xlsx')
 
 @app.route('/')
 def index():
