@@ -1,74 +1,77 @@
-from flask import Flask, jsonify, render_template, request
+from flask import Flask, jsonify, request
 import pandas as pd
-from urllib.parse import unquote
-import json
-import numpy as np
+from collections import Counter
+import re
 
 app = Flask(__name__)
 
-# Custom JSON encoder to handle NaN values
-class CustomJSONEncoder(json.JSONEncoder):
-    def default(self, obj):
-        if isinstance(obj, np.integer):
-            return int(obj)
-        elif isinstance(obj, np.floating):
-            return float(obj)
-        elif isinstance(obj, np.ndarray):
-            return obj.tolist()
-        elif pd.isna(obj):
-            return None
-        return super(CustomJSONEncoder, self).default(obj)
-
-app.json_encoder = CustomJSONEncoder
-
-# Load the Excel file
+# Load the data
 df = pd.read_excel('company_information_full.xlsx')
 
-@app.route('/')
-def index():
-    return render_template('index.html')
+@app.route('/api/company_size_distribution')
+def company_size_distribution():
+    size_distribution = df['company_size'].value_counts().to_dict()
+    return jsonify(size_distribution)
 
-@app.route('/api/companies', methods=['GET'])
-def get_companies():
-    page = int(request.args.get('page', 1))
-    per_page = 10  # Number of companies per page
-    start = (page - 1) * per_page
-    end = start + per_page
+@app.route('/api/industry_breakdown')
+def industry_breakdown():
+    industry_breakdown = df['industry'].value_counts().to_dict()
+    return jsonify(industry_breakdown)
 
-    # Convert the dataframe to a list of dictionaries
-    companies = df.to_dict('records')
-    
-    # Limit the data sent to just what's needed for the company cards
-    limited_data = [
-        {
-            'name': company['Company Name'],
-            'industry': company['industry'] if pd.notna(company['industry']) else None,
-            'profilePicUrl': '/static/'+company['Image_Path'] if pd.notna(company['Image_Path']) else None
-        }
-        for company in companies[start:end]
-    ]
-    
-    return jsonify({
-        'companies': limited_data,
-        'total': len(companies),
-        'page': page,
-        'per_page': per_page
-    })
+@app.route('/api/geographical_distribution')
+def geographical_distribution():
+    country_distribution = df['hq_country'].value_counts().to_dict()
+    return jsonify(country_distribution)
 
-@app.route('/api/company/<path:name>', methods=['GET'])
-def get_company(name):
-    # Decode the URL-encoded company name
-    decoded_name = unquote(name)
-    
-    # Find the company by name
-    company = df[df['Company Name'] == decoded_name].to_dict('records')
-    
+@app.route('/api/follower_count_analysis')
+def follower_count_analysis():
+    follower_counts = df['follower_count'].dropna().tolist()
+    return jsonify(follower_counts)
+
+@app.route('/api/founded_year_timeline')
+def founded_year_timeline():
+    year_counts = df['founded_year'].value_counts().sort_index().to_dict()
+    return jsonify(year_counts)
+
+@app.route('/api/top_companies_followers')
+def top_companies_followers():
+    top_n = request.args.get('n', default=10, type=int)
+    top_companies = df.nlargest(top_n, 'follower_count')[['name', 'follower_count']]
+    return jsonify(top_companies.to_dict(orient='records'))
+
+@app.route('/api/specialties_wordcloud')
+def specialties_wordcloud():
+    all_specialties = ' '.join(df['specialities'].dropna())
+    words = re.findall(r'\w+', all_specialties.lower())
+    word_freq = Counter(words).most_common(100)
+    return jsonify(dict(word_freq))
+
+@app.route('/api/company_type_distribution')
+def company_type_distribution():
+    type_distribution = df['company_type'].value_counts().to_dict()
+    return jsonify(type_distribution)
+
+@app.route('/api/funding_analysis')
+def funding_analysis():
+    funding_data = df[['name', 'extra_number_of_funding_rounds', 'extra_total_funding_amount']].dropna()
+    return jsonify(funding_data.to_dict(orient='records'))
+
+@app.route('/api/employee_follower_correlation')
+def employee_follower_correlation():
+    correlation_data = df[['company_size', 'follower_count']].dropna()
+    return jsonify(correlation_data.to_dict(orient='records'))
+
+@app.route('/api/company_details/<company_name>')
+def company_details(company_name):
+    company = df[df['name'] == company_name].to_dict(orient='records')
     if company:
-        # Replace NaN values with None
-        company_data = {k: (v if pd.notna(v) else None) for k, v in company[0].items()}
-        return jsonify(company_data)
+        return jsonify(company[0])
     else:
-        return jsonify({'error': 'Company not found'}), 404
+        return jsonify({"error": "Company not found"}), 404
+
+@app.errorhandler(500)
+def internal_error(error):
+    return jsonify({"error": "Internal Server Error"}), 500
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=5050, debug=True)
