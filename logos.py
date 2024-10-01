@@ -1,98 +1,128 @@
 import pandas as pd
 import requests
 import os
-from openpyxl import load_workbook
-import re
+import time
+import logging
+import json
+from urllib.parse import urlparse
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from dotenv import load_dotenv
-import xml.etree.ElementTree as ET
+from requests.adapters import HTTPAdapter
+from requests.packages.urllib3.util.retry import Retry
 
 # Load environment variables
 load_dotenv()
 
-def sanitize_filename(filename):
-    return re.sub(r'[^\w\-_\. ]', '_', filename)
+# Configuration
+EXCEL_FILE = 'company_information_full.xlsx'
+API_ENDPOINT = 'https://nubela.co/proxycurl/api/linkedin/company/profile-picture'
+PROXYCURL_API = os.getenv("PROXYCURL_API")
+OUTPUT_FOLDER = 'company_images'
+MAX_WORKERS = 1
+RATE_LIMIT_PER_MINUTE = 5
+RETRY_STRATEGY = Retry(
+    total=5,
+    status_forcelist=[429, 500, 502, 503, 504],
+    allowed_methods=["HEAD", "GET", "OPTIONS"],
+    backoff_factor=1
+)
 
-def get_company_logo_proxycurl(company_name):
-    url = "https://nubela.co/proxycurl/api/linkedin/company/profile-picture/"
-    headers = {
-        "Authorization": f"Bearer {os.getenv('PROXYCURL_API')}"
-    }
-    params = {
-        "company_name": company_name
-    }
-    
-    response = requests.get(url, headers=headers, params=params)
-    
-    if response.status_code == 200:
-        return response.json().get('logo')
-    else:
-        print(f"Proxycurl: No logo found for {company_name}")
-        return None
+# Set up logging
+logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 
-def download_logo(img_url, company_name, folder_path):
+# Ensure the output folder exists
+os.makedirs(OUTPUT_FOLDER, exist_ok=True)
+
+def create_session():
+    session = requests.Session()
+    adapter = HTTPAdapter(max_retries=RETRY_STRATEGY)
+    session.mount("https://", adapter)
+    session.mount("http://", adapter)
+    return session
+
+session = create_session()
+
+def get_company_image(row):
+    linkedin_url = row['LinkedIn URL']
+    company_id = row.name  # Assuming the index is the company ID
+    
+    logging.info(f"Processing company {company_id}: {linkedin_url}")
+    
+    params = {'linkedin_company_profile_url': linkedin_url}
+    headers = {'Authorization': f'Bearer {PROXYCURL_API}'}
+    
     try:
-        response = requests.get(img_url, stream=True)
-        if response.status_code == 200:
-            content_type = response.headers.get('content-type', '')
-            if 'image' in content_type:
-                ext = content_type.split('/')[-1]
-                if ext == 'jpeg':
-                    ext = 'jpg'
-                safe_company_name = sanitize_filename(company_name)
-                file_name = f"{safe_company_name}.{ext}"
-                file_path = os.path.join(folder_path, file_name)
-                with open(file_path, 'wb') as f:
-                    for chunk in response.iter_content(8192):
-                        f.write(chunk)
-                print(f"Logo saved for {company_name}")
-                return True
-            else:
-                print(f"Content is not an image for {company_name}")
-        elif response.status_code == 403:
-            # Check if it's an XML response indicating expired URL
-            root = ET.fromstring(response.content)
-            if root.find('Code').text == 'UnauthorizedAccess' and 'expired' in root.find('Message').text:
-                print(f"URL expired for {company_name}, will fetch new URL")
-                return False
+        response = session.get(API_ENDPOINT, params=params, headers=headers)
+        response.raise_for_status()
+        
+        # Log the raw response content
+        logging.debug(f"Raw API Response for company {company_id}: {response.content}")
+        
+        # Attempt to parse JSON response
+        try:
+            response_json = response.json()
+            logging.debug(f"Parsed API Response for company {company_id}: {json.dumps(response_json, indent=2)}")
+        except json.JSONDecodeError:
+            logging.error(f"Failed to parse JSON response for company {company_id}")
+            return company_id, None
+        
+        image_url = response_json.get('tmp_profile_pic_url')  # Changed from 'image' to 'tmp_profile_pic_url'
+        if image_url:
+            logging.info(f"Image URL found for company {company_id}: {image_url}")
+            # Download the image
+            image_response = session.get(image_url)
+            image_response.raise_for_status()
+            
+            # Parse the filename from the URL
+            parsed_url = urlparse(image_url)
+            file_name = os.path.basename(parsed_url.path)
+            file_extension = os.path.splitext(file_name)[1] or '.jpg'
+            
+            # Save the image
+            image_path = os.path.join(OUTPUT_FOLDER, f'{company_id}{file_extension}')
+            with open(image_path, 'wb') as f:
+                f.write(image_response.content)
+            
+            logging.info(f"Image saved for company {company_id}: {image_path}")
+            return company_id, image_path
         else:
-            print(f"Failed to download logo for {company_name}: HTTP {response.status_code}")
-    except ET.ParseError:
-        print(f"Unexpected response format for {company_name}")
-    except Exception as e:
-        print(f"Error downloading logo for {company_name}: {str(e)}")
-    return False
+            logging.warning(f"No image URL found in the response for company {company_id}")
+            return company_id, None
+    except requests.exceptions.RequestException as e:
+        logging.error(f"Error processing company {company_id}: {str(e)}")
+        return company_id, None
+
+def rate_limited_api_call(row):
+    time.sleep(60 / RATE_LIMIT_PER_MINUTE)  # Wait to respect rate limit
+    return get_company_image(row)
 
 def main():
-    # Load the Excel file
-    excel_file = 'company_information_full.xlsx'
-    sheet_name = 'Company Information'
-    column_name = 'A'  # Assuming company names are still in column A
+    logging.info(f"Starting process. Reading Excel file: {EXCEL_FILE}")
+    # Read the Excel file
+    df = pd.read_excel(EXCEL_FILE)
     
-    workbook = load_workbook(excel_file)
-    sheet = workbook[sheet_name]
+    logging.info(f"Total companies to process: {len(df)}")
     
-    company_names = [cell.value for cell in sheet[column_name] if cell.value]
+    # Create a new column for image paths
+    df['Image Path'] = ''
     
-    # Create a folder to save logos
-    folder_path = 'company_logos'
-    os.makedirs(folder_path, exist_ok=True)
-    
-    # Find and download logos for each company
-    for company_name in company_names:
-        attempts = 0
-        while attempts < 2:  # Try up to 2 times (original attempt + 1 retry)
-            logo_url = get_company_logo_proxycurl(company_name)
-            if logo_url:
-                if download_logo(logo_url, company_name, folder_path):
-                    break  # Successfully downloaded, move to next company
-                else:
-                    attempts += 1  # URL might have expired, retry
-            else:
-                print(f"No logo URL found for {company_name}")
-                break  # No URL found, move to next company
+    # Use ThreadPoolExecutor for concurrent API calls
+    with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
+        future_to_company = {executor.submit(rate_limited_api_call, row): row for _, row in df.iterrows()}
         
-        if attempts == 2:
-            print(f"Failed to download logo for {company_name} after retry")
+        for future in as_completed(future_to_company):
+            company_id, image_path = future.result()
+            if image_path:
+                df.at[company_id, 'Image Path'] = image_path
+    
+    # Save the updated DataFrame back to Excel
+    df.to_excel(EXCEL_FILE, index=False)
+    logging.info(f"Updated Excel file saved: {EXCEL_FILE}")
+    
+    # Print summary
+    total_companies = len(df)
+    companies_with_images = df['Image Path'].notna().sum()
+    logging.info(f"Process completed. Images found for {companies_with_images} out of {total_companies} companies.")
 
 if __name__ == "__main__":
     main()
