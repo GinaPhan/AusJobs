@@ -43,7 +43,7 @@ def get_companies():
         {
             'name': company['Company Name'],
             'industry': company['industry'] if pd.notna(company['industry']) else None,
-            'profilePicUrl': company['profile_pic_url'] if pd.notna(company['profile_pic_url']) else None
+            'profilePicUrl': '/static/'+company['Image_Path'] if pd.notna(company['Image_Path']) else None
         }
         for company in companies[start:end]
     ]

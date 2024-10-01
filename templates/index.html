@@ -110,7 +110,7 @@
 
                 modalTitle.textContent = company['Company Name'];
                 modalBody.innerHTML = `
-                    <img src="${company['profile_pic_url'] || '/static/placeholder.jpg'}" class="img-fluid mb-3" alt="${company['Company Name']} logo" onerror="this.onerror=null; this.src='/static/placeholder.jpg';">
+                    <img src="${"/static/"+company['Image_Path'] || '/static/placeholder.jpg'}" class="img-fluid mb-3" alt="${company['Company Name']} logo" onerror="this.onerror=null; this.src='/static/placeholder.jpg';">
                     <p><strong>Industry:</strong> ${company['industry'] || 'N/A'}</p>
                     <p><strong>Company Size:</strong> ${company['company_size'] || 'N/A'}</p>
                     <p><strong>Headquarters:</strong> ${company['hq_city'] || 'N/A'}, ${company['hq_state'] || 'N/A'}, ${company['hq_country'] || 'N/A'}</p>
