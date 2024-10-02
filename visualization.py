@@ -8,7 +8,7 @@ import pandas as pd
 from wordcloud import WordCloud
 import matplotlib.pyplot as plt
 
-API_URL = "http://localhost:5050/api"
+API_URL = "https://ausjobmarket.onrender.com/api"
 
 st.set_page_config(page_title="Company Data Dashboard", layout="wide")
 
