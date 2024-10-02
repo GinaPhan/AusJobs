@@ -11,6 +11,40 @@ app = Flask(__name__)
 # Load the data
 df = pd.read_excel('company_information_full.xlsx')
 
+# Load Australian states GeoJSON
+with open('data/map/australian-states.json', 'r') as f:
+    australia_geojson = json.load(f)
+
+# Mapping of state codes to names
+state_code_to_name = {
+    feature['properties']['STATE_CODE']: feature['properties']['STATE_NAME']
+    for feature in australia_geojson['features']
+}
+
+# Reverse mapping of state names to codes
+state_name_to_code = {v: k for k, v in state_code_to_name.items()}
+
+# Additional mappings for state names
+state_name_mapping = {
+    'ACT': '8',
+    'Australian Capital Territory': '8',
+    'NSW': '1',
+    'New South Wales': '1',
+    'New South Wales,': '1',
+    'VIC': '2',
+    'Victoria': '2',
+    'QLD': '3',
+    'Queensland': '3',
+    'SA': '4',
+    'South Australia': '4',
+    'WA': '5',
+    'Western Australia': '5',
+    'TAS': '6',
+    'Tasmania': '6',
+    'NT': '7',
+    'Northern Territory': '7'
+}
+
 # Mapping of country codes to Plotly-compatible country names
 country_map = {
     'AU': 'Australia',
@@ -143,25 +177,29 @@ def geographical_distribution():
             return []
         try:
             locations_list = json.loads(row['locations']) if isinstance(row['locations'], str) else row['locations']
-            return [country_map.get(loc['country'], loc['country']) for loc in locations_list if isinstance(loc, dict) and 'country' in loc]
+            return [(country_map.get(loc['country'], loc['country']), loc.get('state')) 
+                    for loc in locations_list if isinstance(loc, dict) and 'country' in loc]
         except json.JSONDecodeError:
             return []
         except Exception as e:
             print(f"Error processing location: {row['locations']}. Error: {str(e)}")
             return []
 
-    # Apply the function to create a new column with extracted countries
-    df['extracted_countries'] = df.apply(extract_locations, axis=1)
+    # Apply the function to create a new column with extracted countries and states
+    df['extracted_locations'] = df.apply(extract_locations, axis=1)
 
-    # Explode the dataframe so each country is on a separate row
-    exploded_df = df.explode('extracted_countries')
+    # Explode the dataframe so each location is on a separate row
+    exploded_df = df.explode('extracted_locations')
+
+    # Split the extracted_locations into separate columns
+    exploded_df[['country', 'state']] = pd.DataFrame(exploded_df['extracted_locations'].tolist(), index=exploded_df.index)
 
     # Group by country and aggregate
-    grouped = exploded_df.groupby('extracted_countries').agg({
+    grouped = exploded_df.groupby('country').agg({
         'name': 'count',
-        'follower_count': lambda x: x.mean(skipna=True),
-        'company_size_on_linkedin': lambda x: x.mean(skipna=True),
-        'founded_year': lambda x: x.median(skipna=True)  # Using median for founding year
+        'follower_count': 'mean',
+        'company_size_on_linkedin': 'mean',
+        'founded_year': 'median'
     }).reset_index()
 
     # Rename columns
@@ -172,7 +210,33 @@ def geographical_distribution():
     grouped['avg_company_size'] = grouped['avg_company_size'].round().fillna(0).astype(int)
     grouped['median_founding_year'] = grouped['median_founding_year'].round().fillna(0).astype(int)
 
-    return jsonify(grouped.to_dict(orient='records'))
+    # Group by state for Australia and aggregate
+    australia_df = exploded_df[exploded_df['country'] == 'Australia']
+    australia_df['state_code'] = australia_df['state'].map(state_name_mapping)
+    
+    state_grouped = australia_df.groupby('state_code').agg({
+        'name': 'count',
+        'follower_count': 'mean',
+        'company_size_on_linkedin': 'mean',
+        'founded_year': 'median'
+    }).reset_index()
+
+    # Rename columns
+    state_grouped.columns = ['state_code', 'company_count', 'avg_follower_count', 'avg_company_size', 'median_founding_year']
+
+    # Round numerical values and handle NaN
+    state_grouped['avg_follower_count'] = state_grouped['avg_follower_count'].round().fillna(0).astype(int)
+    state_grouped['avg_company_size'] = state_grouped['avg_company_size'].round().fillna(0).astype(int)
+    state_grouped['median_founding_year'] = state_grouped['median_founding_year'].round().fillna(0).astype(int)
+
+    # Map state codes to names
+    state_grouped['state_name'] = state_grouped['state_code'].map(state_code_to_name)
+
+    return jsonify({
+        'countries': grouped.to_dict(orient='records'),
+        'australia_states': state_grouped.to_dict(orient='records'),
+        'australia_geojson': australia_geojson
+    })
 
 @app.route('/api/follower_count_analysis')
 def follower_count_analysis():

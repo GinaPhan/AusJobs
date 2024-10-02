@@ -8,7 +8,7 @@ import pandas as pd
 from wordcloud import WordCloud
 import matplotlib.pyplot as plt
 
-API_URL = "https://ausjobmarket.onrender.com/api"
+API_URL = "http://localhost:5050/api"
 
 st.set_page_config(page_title="Company Data Dashboard", layout="wide")
 
@@ -76,7 +76,13 @@ def plot_geographical_distribution():
         st.error("Failed to fetch geographical distribution data.")
         return
 
-    df = pd.DataFrame(data)
+    df_countries = pd.DataFrame(data['countries'])
+    df_australia_states = pd.DataFrame(data['australia_states'])
+    australia_geojson = data['australia_geojson']
+
+    # Create a dropdown for selecting the view
+    view_options = ['World', 'Australia']
+    selected_view = st.selectbox("Select view", view_options)
 
     # Create a dropdown for attribute selection
     attributes = {
@@ -87,38 +93,52 @@ def plot_geographical_distribution():
     }
     selected_attribute = st.selectbox("Select attribute to visualize", list(attributes.keys()))
 
-    # Create the choropleth map
-    fig = px.choropleth(
-        df,
-        locations='country',
-        locationmode="country names",
-        color=attributes[selected_attribute], 
-        hover_name='country',
-        color_continuous_scale="YlOrRd",
-        title=f"{selected_attribute} by Country",
-        range_color=[df[attributes[selected_attribute]].min(), df[attributes[selected_attribute]].max()]
-    )
+    if selected_view == 'World':
+        fig = px.choropleth(
+            df_countries,
+            locations='country',
+            locationmode="country names",
+            color=attributes[selected_attribute], 
+            hover_name='country',
+            color_continuous_scale="YlOrRd",
+            title=f"{selected_attribute} by Country",
+            range_color=[df_countries[attributes[selected_attribute]].min(), df_countries[attributes[selected_attribute]].max()]
+        )
+    else:
+        fig = px.choropleth(
+            df_australia_states,
+            geojson=australia_geojson,
+            locations='state_code',
+            featureidkey="properties.STATE_CODE",
+            color=attributes[selected_attribute],
+            hover_name='state_name',
+            color_continuous_scale="YlOrRd",
+            title=f"{selected_attribute} by Australian State",
+            range_color=[df_australia_states[attributes[selected_attribute]].min(), df_australia_states[attributes[selected_attribute]].max()]
+        )
+        fig.update_geos(fitbounds="locations", visible=False)
 
     fig.update_layout(
         height=600,
         geo=dict(showframe=False, showcoastlines=True),
-        coloraxis_colorbar=dict(
-            title=selected_attribute,
-            tickvals=[df[attributes[selected_attribute]].min(), df[attributes[selected_attribute]].max()],
-            ticktext=["Low", "High"],
-            lenmode="pixels", len=300,
-        )
     )
     
     st.plotly_chart(fig, use_container_width=True)
 
     # Display statistics
-    st.subheader(f"Top 10 Countries by {selected_attribute}")
+    if selected_view == 'World':
+        df = df_countries
+        location_column = 'country'
+    else:
+        df = df_australia_states
+        location_column = 'state_name'
+
+    st.subheader(f"Top 10 {location_column.title()}s by {selected_attribute}")
     top_10 = df.sort_values(attributes[selected_attribute], ascending=False).head(10)
     for _, row in top_10.iterrows():
-        st.write(f"{row['country']}: {row[attributes[selected_attribute]]}")
+        st.write(f"{row[location_column]}: {row[attributes[selected_attribute]]}")
 
-    st.write(f"Global average {selected_attribute.lower()}: {df[attributes[selected_attribute]].mean():.2f}")
+    st.write(f"Average {selected_attribute.lower()}: {df[attributes[selected_attribute]].mean():.2f}")
 
 # Founded Year Timeline
 def plot_founded_year_timeline():
