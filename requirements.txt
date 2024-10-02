@@ -8,3 +8,5 @@ flask-cors
 streamlit
 plotly
 pydeck
+wordcloud
+matplotlib
