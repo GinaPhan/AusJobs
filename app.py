@@ -9,7 +9,7 @@ import json
 app = Flask(__name__)
 
 # Load the data
-df = pd.read_excel('company_information_full.xlsx')
+df = pd.read_excel('cleaned_state_data.xlsx')
 
 # Load Australian states GeoJSON
 with open('data/map/australian-states.json', 'r') as f:
