@@ -1,0 +1,325 @@
+Entity,Value,Type
+Argentina,4,company_count
+Argentina,2894458,avg_follower_count
+Argentina,113903,avg_company_size
+Argentina,1976,median_founding_year
+Armenia,1,company_count
+Armenia,422254,avg_follower_count
+Armenia,2869,avg_company_size
+Armenia,2011,median_founding_year
+Australia,224,company_count
+Australia,327266,avg_follower_count
+Australia,8182,avg_company_size
+Australia,2009,median_founding_year
+Austria,8,company_count
+Austria,2914342,avg_follower_count
+Austria,73208,avg_company_size
+Austria,1984,median_founding_year
+BO,1,company_count
+BO,1413838,avg_follower_count
+BO,54472,avg_company_size
+BO,0,median_founding_year
+Bahrain,1,company_count
+Bahrain,1413838,avg_follower_count
+Bahrain,54472,avg_company_size
+Bahrain,0,median_founding_year
+Bangladesh,2,company_count
+Bangladesh,1413838,avg_follower_count
+Bangladesh,54472,avg_company_size
+Bangladesh,0,median_founding_year
+Barbados,1,company_count
+Barbados,1413838,avg_follower_count
+Barbados,54472,avg_company_size
+Barbados,0,median_founding_year
+Belgium,12,company_count
+Belgium,964927,avg_follower_count
+Belgium,25934,avg_company_size
+Belgium,1981,median_founding_year
+Brazil,21,company_count
+Brazil,2133410,avg_follower_count
+Brazil,54137,avg_company_size
+Brazil,1980,median_founding_year
+Bulgaria,2,company_count
+Bulgaria,2608062,avg_follower_count
+Bulgaria,63530,avg_company_size
+Bulgaria,2000,median_founding_year
+Canada,26,company_count
+Canada,2174186,avg_follower_count
+Canada,42270,avg_company_size
+Canada,1984,median_founding_year
+Chile,6,company_count
+Chile,1594782,avg_follower_count
+Chile,71450,avg_company_size
+Chile,1950,median_founding_year
+China,21,company_count
+China,501194,avg_follower_count
+China,11001,avg_company_size
+China,1976,median_founding_year
+Colombia,4,company_count
+Colombia,1402476,avg_follower_count
+Colombia,72901,avg_company_size
+Colombia,1976,median_founding_year
+Costa Rica,1,company_count
+Costa Rica,1413838,avg_follower_count
+Costa Rica,54472,avg_company_size
+Costa Rica,0,median_founding_year
+Czech Republic,3,company_count
+Czech Republic,2728272,avg_follower_count
+Czech Republic,72525,avg_company_size
+Czech Republic,0,median_founding_year
+Denmark,10,company_count
+Denmark,1910523,avg_follower_count
+Denmark,58697,avg_company_size
+Denmark,1923,median_founding_year
+Dominican Republic,1,company_count
+Dominican Republic,1413838,avg_follower_count
+Dominican Republic,54472,avg_company_size
+Dominican Republic,0,median_founding_year
+EC,2,company_count
+EC,1017228,avg_follower_count
+EC,32880,avg_company_size
+EC,0,median_founding_year
+Egypt,3,company_count
+Egypt,3341627,avg_follower_count
+Egypt,129185,avg_company_size
+Egypt,0,median_founding_year
+Finland,2,company_count
+Finland,1017228,avg_follower_count
+Finland,32880,avg_company_size
+Finland,0,median_founding_year
+France,30,company_count
+France,1818497,avg_follower_count
+France,44716,avg_company_size
+France,1976,median_founding_year
+GT,1,company_count
+GT,1413838,avg_follower_count
+GT,54472,avg_company_size
+GT,0,median_founding_year
+Germany,43,company_count
+Germany,1764482,avg_follower_count
+Germany,38227,avg_company_size
+Germany,1984,median_founding_year
+Greece,2,company_count
+Greece,1519406,avg_follower_count
+Greece,46329,avg_company_size
+Greece,0,median_founding_year
+HN,1,company_count
+HN,1413838,avg_follower_count
+HN,54472,avg_company_size
+HN,0,median_founding_year
+Hong Kong,7,company_count
+Hong Kong,2331048,avg_follower_count
+Hong Kong,42507,avg_company_size
+Hong Kong,1984,median_founding_year
+Hungary,3,company_count
+Hungary,4841930,avg_follower_count
+Hungary,85131,avg_company_size
+Hungary,1984,median_founding_year
+India,28,company_count
+India,1551424,avg_follower_count
+India,48535,avg_company_size
+India,1983,median_founding_year
+Indonesia,3,company_count
+Indonesia,1100259,avg_follower_count
+Indonesia,31603,avg_company_size
+Indonesia,1976,median_founding_year
+Ireland,9,company_count
+Ireland,671073,avg_follower_count
+Ireland,18770,avg_company_size
+Ireland,2000,median_founding_year
+Israel,5,company_count
+Israel,1675027,avg_follower_count
+Israel,33775,avg_company_size
+Israel,1983,median_founding_year
+Italy,12,company_count
+Italy,859988,avg_follower_count
+Italy,16291,avg_company_size
+Italy,1976,median_founding_year
+Jamaica,1,company_count
+Jamaica,1413838,avg_follower_count
+Jamaica,54472,avg_company_size
+Jamaica,0,median_founding_year
+Japan,11,company_count
+Japan,1430855,avg_follower_count
+Japan,42242,avg_company_size
+Japan,2015,median_founding_year
+Jordan,1,company_count
+Jordan,1413838,avg_follower_count
+Jordan,54472,avg_company_size
+Jordan,0,median_founding_year
+Kazakhstan,1,company_count
+Kazakhstan,1624975,avg_follower_count
+Kazakhstan,38186,avg_company_size
+Kazakhstan,0,median_founding_year
+Kuwait,1,company_count
+Kuwait,1413838,avg_follower_count
+Kuwait,54472,avg_company_size
+Kuwait,0,median_founding_year
+Lebanon,1,company_count
+Lebanon,1413838,avg_follower_count
+Lebanon,54472,avg_company_size
+Lebanon,0,median_founding_year
+Luxembourg,1,company_count
+Luxembourg,261965,avg_follower_count
+Luxembourg,2152,avg_company_size
+Luxembourg,1976,median_founding_year
+Malaysia,4,company_count
+Malaysia,1155730,avg_follower_count
+Malaysia,40268,avg_company_size
+Malaysia,1996,median_founding_year
+Mexico,10,company_count
+Mexico,2527826,avg_follower_count
+Mexico,69959,avg_company_size
+Mexico,1980,median_founding_year
+Morocco,1,company_count
+Morocco,261965,avg_follower_count
+Morocco,2152,avg_company_size
+Morocco,1976,median_founding_year
+Netherlands,28,company_count
+Netherlands,1516326,avg_follower_count
+Netherlands,67618,avg_company_size
+Netherlands,2000,median_founding_year
+New Zealand,15,company_count
+New Zealand,164902,avg_follower_count
+New Zealand,6917,avg_company_size
+New Zealand,2000,median_founding_year
+Norway,2,company_count
+Norway,6555976,avg_follower_count
+Norway,100460,avg_company_size
+Norway,1984,median_founding_year
+PR,2,company_count
+PR,1413838,avg_follower_count
+PR,54472,avg_company_size
+PR,0,median_founding_year
+Pakistan,1,company_count
+Pakistan,1413838,avg_follower_count
+Pakistan,54472,avg_company_size
+Pakistan,0,median_founding_year
+Palestine,1,company_count
+Palestine,1413838,avg_follower_count
+Palestine,54472,avg_company_size
+Palestine,0,median_founding_year
+Panama,1,company_count
+Panama,1413838,avg_follower_count
+Panama,54472,avg_company_size
+Panama,0,median_founding_year
+Peru,4,company_count
+Peru,1501400,avg_follower_count
+Peru,53797,avg_company_size
+Peru,1976,median_founding_year
+Philippines,6,company_count
+Philippines,1303843,avg_follower_count
+Philippines,44987,avg_company_size
+Philippines,2001,median_founding_year
+Poland,11,company_count
+Poland,1770962,avg_follower_count
+Poland,40602,avg_company_size
+Poland,1984,median_founding_year
+Portugal,3,company_count
+Portugal,1100259,avg_follower_count
+Portugal,31603,avg_company_size
+Portugal,1976,median_founding_year
+Qatar,1,company_count
+Qatar,261965,avg_follower_count
+Qatar,2152,avg_company_size
+Qatar,1976,median_founding_year
+Romania,6,company_count
+Romania,2189056,avg_follower_count
+Romania,42642,avg_company_size
+Romania,1982,median_founding_year
+Russia,1,company_count
+Russia,1413838,avg_follower_count
+Russia,54472,avg_company_size
+Russia,0,median_founding_year
+SV,1,company_count
+SV,1413838,avg_follower_count
+SV,54472,avg_company_size
+SV,0,median_founding_year
+Saudi Arabia,2,company_count
+Saudi Arabia,1519406,avg_follower_count
+Saudi Arabia,46329,avg_company_size
+Saudi Arabia,0,median_founding_year
+Serbia,2,company_count
+Serbia,707052,avg_follower_count
+Serbia,27246,avg_company_size
+Serbia,2022,median_founding_year
+Singapore,30,company_count
+Singapore,1573772,avg_follower_count
+Singapore,50356,avg_company_size
+Singapore,1993,median_founding_year
+Slovakia,3,company_count
+Slovakia,2010696,avg_follower_count
+Slovakia,149353,avg_company_size
+Slovakia,0,median_founding_year
+South Africa,5,company_count
+South Africa,641736,avg_follower_count
+South Africa,22621,avg_company_size
+South Africa,2001,median_founding_year
+South Korea,3,company_count
+South Korea,903052,avg_follower_count
+South Korea,29467,avg_company_size
+South Korea,2002,median_founding_year
+Spain,21,company_count
+Spain,1581988,avg_follower_count
+Spain,37965,avg_company_size
+Spain,1986,median_founding_year
+Sri Lanka,1,company_count
+Sri Lanka,1413838,avg_follower_count
+Sri Lanka,54472,avg_company_size
+Sri Lanka,0,median_founding_year
+Sweden,8,company_count
+Sweden,1542058,avg_follower_count
+Sweden,60791,avg_company_size
+Sweden,1986,median_founding_year
+Switzerland,15,company_count
+Switzerland,929698,avg_follower_count
+Switzerland,30093,avg_company_size
+Switzerland,1993,median_founding_year
+Taiwan,3,company_count
+Taiwan,1029880,avg_follower_count
+Taiwan,37032,avg_company_size
+Taiwan,1976,median_founding_year
+Thailand,7,company_count
+Thailand,781522,avg_follower_count
+Thailand,23455,avg_company_size
+Thailand,1976,median_founding_year
+Trinidad and Tobago,1,company_count
+Trinidad and Tobago,1413838,avg_follower_count
+Trinidad and Tobago,54472,avg_company_size
+Trinidad and Tobago,0,median_founding_year
+Turkey,6,company_count
+Turkey,1351301,avg_follower_count
+Turkey,28401,avg_company_size
+Turkey,2002,median_founding_year
+Ukraine,3,company_count
+Ukraine,4841930,avg_follower_count
+Ukraine,85131,avg_company_size
+Ukraine,1984,median_founding_year
+United Arab Emirates,7,company_count
+United Arab Emirates,1781350,avg_follower_count
+United Arab Emirates,64746,avg_company_size
+United Arab Emirates,1950,median_founding_year
+United Kingdom,61,company_count
+United Kingdom,1255942,avg_follower_count
+United Kingdom,29946,avg_company_size
+United Kingdom,1984,median_founding_year
+United States,245,company_count
+United States,2441510,avg_follower_count
+United States,54414,avg_company_size
+United States,1984,median_founding_year
+Uruguay,2,company_count
+Uruguay,2164900,avg_follower_count
+Uruguay,79282,avg_company_size
+Uruguay,0,median_founding_year
+VE,1,company_count
+VE,1413838,avg_follower_count
+VE,54472,avg_company_size
+VE,0,median_founding_year
+Vietnam,3,company_count
+Vietnam,510959,avg_follower_count
+Vietnam,18827,avg_company_size
+Vietnam,2003,median_founding_year
+Yemen,1,company_count
+Yemen,1413838,avg_follower_count
+Yemen,54472,avg_company_size
+Yemen,0,median_founding_year

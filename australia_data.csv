@@ -1,0 +1,33 @@
+Entity,Value,Type
+New South Wales,77,company_count
+New South Wales,468487,avg_follower_count
+New South Wales,11575,avg_company_size
+New South Wales,2008,median_founding_year
+Victoria,60,company_count
+Victoria,564159,avg_follower_count
+Victoria,13869,avg_company_size
+Victoria,2010,median_founding_year
+Queensland,27,company_count
+Queensland,19429,avg_follower_count
+Queensland,284,avg_company_size
+Queensland,2010,median_founding_year
+South Australia,7,company_count
+South Australia,8120,avg_follower_count
+South Australia,98,avg_company_size
+South Australia,2011,median_founding_year
+Western Australia,12,company_count
+Western Australia,34947,avg_follower_count
+Western Australia,566,avg_company_size
+Western Australia,1999,median_founding_year
+Tasmania,4,company_count
+Tasmania,13744,avg_follower_count
+Tasmania,316,avg_company_size
+Tasmania,2010,median_founding_year
+Northern Territory,2,company_count
+Northern Territory,18659,avg_follower_count
+Northern Territory,366,avg_company_size
+Northern Territory,2008,median_founding_year
+Australian Capital Territory,5,company_count
+Australian Capital Territory,15751,avg_follower_count
+Australian Capital Territory,249,avg_company_size
+Australian Capital Territory,2004,median_founding_year

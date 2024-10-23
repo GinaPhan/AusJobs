@@ -4,12 +4,150 @@ from collections import Counter
 import re
 from urllib.parse import unquote
 import numpy as np
+import csv
 import json
 
 app = Flask(__name__)
 
 # Load the data
 df = pd.read_excel('cleaned_state_data.xlsx')
+
+import pandas as pd
+import csv
+from flask import jsonify
+from urllib.parse import unquote
+import json
+import numpy as np
+
+@app.route('/api/create_csv_files')
+def create_csv_files():
+    # Helper functions from the geographical distribution endpoint
+    def extract_locations(row):
+        if pd.isna(row['locations']):
+            return []
+        try:
+            locations_list = json.loads(row['locations']) if isinstance(row['locations'], str) else row['locations']
+            return [(country_map.get(loc['country'], loc['country']), loc.get('state'))
+                    for loc in locations_list if isinstance(loc, dict) and 'country' in loc]
+        except json.JSONDecodeError:
+            return []
+        except Exception as e:
+            print(f"Error processing location: {row['locations']}. Error: {str(e)}")
+            return []
+
+    def count_specialties(specialties):
+        if pd.isna(specialties):
+            return 0
+        return len(str(specialties).split(','))
+
+    def count_countries(locations):
+        if pd.isna(locations):
+            return 0
+        try:
+            locations_list = json.loads(locations)
+        except json.JSONDecodeError:
+            return len(set(str(locations).split(',')))
+        
+        if isinstance(locations_list, list):
+            return len(set(loc.get('country') for loc in locations_list if isinstance(loc, dict) and 'country' in loc))
+        else:
+            return 1
+
+    def safe_int(value):
+        try:
+            if pd.isna(value):
+                return 0
+            return int(round(value))
+        except:
+            return 0
+
+    # 1. Create company_data.csv
+    columns_to_include = [
+        'follower_count',
+        'company_size_on_linkedin',
+        'founded_year'
+    ]
+
+    # Add specialty and country counts to DataFrame
+    df['num_specialties'] = df['specialities'].apply(count_specialties)
+    df['num_countries'] = df['locations'].apply(count_countries)
+    columns_to_include.extend(['num_specialties', 'num_countries'])
+
+    # Create company data CSV
+    company_data = []
+    for _, company in df.iterrows():
+        company_name = company['name']
+        for column in columns_to_include:
+            if pd.notnull(company[column]):
+                company_data.append({
+                    'Company': company_name,
+                    'Value': safe_int(company[column]),
+                    'Type': column
+                })
+
+    # 2. Create world_data.csv
+    # Process geographical distribution data
+    df['extracted_locations'] = df.apply(extract_locations, axis=1)
+    exploded_df = df.explode('extracted_locations')
+    exploded_df[['country', 'state']] = pd.DataFrame(exploded_df['extracted_locations'].tolist(), index=exploded_df.index)
+
+    # Group by country
+    grouped = exploded_df.groupby('country').agg({
+        'name': 'count',
+        'follower_count': 'mean',
+        'company_size_on_linkedin': 'mean',
+        'founded_year': 'median'
+    }).reset_index()
+
+    # Create world data CSV
+    world_data = []
+    for _, row in grouped.iterrows():
+        world_data.extend([
+            {'Entity': row['country'], 'Value': safe_int(row['name']), 'Type': 'company_count'},
+            {'Entity': row['country'], 'Value': safe_int(row['follower_count']), 'Type': 'avg_follower_count'},
+            {'Entity': row['country'], 'Value': safe_int(row['company_size_on_linkedin']), 'Type': 'avg_company_size'},
+            {'Entity': row['country'], 'Value': safe_int(row['founded_year']), 'Type': 'median_founding_year'}
+        ])
+
+    # 3. Create australia_data.csv
+    australia_df = exploded_df[exploded_df['country'] == 'Australia']
+    australia_df['state_code'] = australia_df['state'].map(state_name_mapping)
+
+    state_grouped = australia_df.groupby('state_code').agg({
+        'name': 'count',
+        'follower_count': 'mean',
+        'company_size_on_linkedin': 'mean',
+        'founded_year': 'median'
+    }).reset_index()
+
+    # Create Australia data CSV
+    australia_data = []
+    for _, row in state_grouped.iterrows():
+        state_name = state_code_to_name.get(row['state_code'], row['state_code'])
+        australia_data.extend([
+            {'Entity': state_name, 'Value': safe_int(row['name']), 'Type': 'company_count'},
+            {'Entity': state_name, 'Value': safe_int(row['follower_count']), 'Type': 'avg_follower_count'},
+            {'Entity': state_name, 'Value': safe_int(row['company_size_on_linkedin']), 'Type': 'avg_company_size'},
+            {'Entity': state_name, 'Value': safe_int(row['founded_year']), 'Type': 'median_founding_year'}
+        ])
+
+    # Write all three CSV files
+    files_to_write = [
+        ('company_data.csv', company_data, ['Company', 'Value', 'Type']),
+        ('world_data.csv', world_data, ['Entity', 'Value', 'Type']),
+        ('australia_data.csv', australia_data, ['Entity', 'Value', 'Type'])
+    ]
+
+    for filename, data, fieldnames in files_to_write:
+        with open(filename, 'w', newline='', encoding='utf-8') as csvfile:
+            writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+            writer.writeheader()
+            writer.writerows(data)
+
+    return jsonify({
+        "message": "CSV files created successfully",
+        "files": ["company_data.csv", "world_data.csv", "australia_data.csv"]
+    }), 200
 
 # Load Australian states GeoJSON
 with open('data/map/australian-states.json', 'r') as f:
