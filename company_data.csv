@@ -4,800 +4,1160 @@ The Recruitment Company Pty Ltd,53,company_size_on_linkedin
 The Recruitment Company Pty Ltd,2000,founded_year
 The Recruitment Company Pty Ltd,11,num_specialties
 The Recruitment Company Pty Ltd,3,num_countries
+The Recruitment Company Pty Ltd,"[Recruitment, .Net recruitment, IT recruitment, Government recruitment, 0007 scheme, Project Services recruitment, Digital recruitment, Technology recruitment, Sales recruitment, Business analysis recruitment, Communications recruitment]",specialties_list
+The Recruitment Company Pty Ltd,"IE,SG,AU",countries_list
 Entourage,10566,follower_count
 Entourage,180,company_size_on_linkedin
 Entourage,2013,founded_year
 Entourage,13,num_specialties
 Entourage,4,num_countries
+Entourage,"[Pharmaceutical Industry, IVD, Clinical Affairs, Medical Technology, Quality, Medical Affairs, Digitalization, Consulting, Unternehmensberatung, Pharma, MedTech, Medical Device, Pharmazie]",specialties_list
+Entourage,"IT,CH,DE,US",countries_list
 TrainTheCrowd,811,follower_count
 TrainTheCrowd,20,company_size_on_linkedin
 TrainTheCrowd,2012,founded_year
 TrainTheCrowd,4,num_specialties
 TrainTheCrowd,1,num_countries
+TrainTheCrowd,"[Salesforce Training, Salesforce User Adoption, Microsoft Dynamics, Instructional Design]",specialties_list
+TrainTheCrowd,AU,countries_list
 Atarix,565,follower_count
 Atarix,14,company_size_on_linkedin
 Atarix,2016,founded_year
 Atarix,21,num_specialties
 Atarix,1,num_countries
+Atarix,"[Cloud Computing, Business Transformation, Technology Governance & Advisory, Solution Architecture, Project Services, Process and Business Analysis, Managed Services, Managed IT, Security, Hybrid Workplace, Modern Workplace, Unified Communication, Unified Collaboration, Collaboration, Remote Work, IT Consulting, IT Strategy, Strategy & Consulting, IT Governance, Virtual Desktop, Managed IT as a Service]",specialties_list
+Atarix,AU,countries_list
 Glaukos Corporation,25674,follower_count
 Glaukos Corporation,862,company_size_on_linkedin
 Glaukos Corporation,1998,founded_year
 Glaukos Corporation,10,num_specialties
 Glaukos Corporation,0,num_countries
+Glaukos Corporation,"[Glaucoma, MIGS, Medical Device, Keratoconus, Corneal Crosslinking, Ophthalmic, Corneal Health, Retina, Medical Device, Pharmaceuticals]",specialties_list
+Glaukos Corporation,,countries_list
 Belloy Geologists,1460,follower_count
 Belloy Geologists,1979,founded_year
 Belloy Geologists,4,num_specialties
 Belloy Geologists,1,num_countries
+Belloy Geologists,"[Wellsite Geological Supervision, Operations and Project Management, Remote and Onsite Geo-steering, Reservoir Evaluation]",specialties_list
+Belloy Geologists,CA,countries_list
 Avenue Dental,82,follower_count
 Avenue Dental,32,company_size_on_linkedin
 Avenue Dental,2010,founded_year
 Avenue Dental,4,num_specialties
 Avenue Dental,1,num_countries
+Avenue Dental,"[cosmetic dentistry, general dentistry, family dentistry, orthodontics]",specialties_list
+Avenue Dental,US,countries_list
 Tiliter,5374,follower_count
 Tiliter,19,company_size_on_linkedin
 Tiliter,13,num_specialties
 Tiliter,2,num_countries
+Tiliter,"[Artificial Intelligence, Machine Learning, Data Driven Processes, Automation, App Development, Coding, Programming, Mechanical Design, Electrical Design, Software Development, Software Implementation, Business Technology Solutions Consultation, retail industry]",specialties_list
+Tiliter,"AU,DE",countries_list
 Propel Ventures,2177,follower_count
 Propel Ventures,33,company_size_on_linkedin
 Propel Ventures,2016,founded_year
 Propel Ventures,9,num_specialties
 Propel Ventures,1,num_countries
+Propel Ventures,"[Product Development, Product Strategy, App Modernisation & Development, AWS Select Consulting Partner, Accelerated Development, Product Design, product management, software development, software consulting]",specialties_list
+Propel Ventures,AU,countries_list
 Quorum Systems,25,follower_count
 Quorum Systems,6,company_size_on_linkedin
 Quorum Systems,1,num_specialties
 Quorum Systems,1,num_countries
+Quorum Systems,[],specialties_list
+Quorum Systems,US,countries_list
 Moddex Group,4886,follower_count
 Moddex Group,98,company_size_on_linkedin
 Moddex Group,2010,founded_year
 Moddex Group,9,num_specialties
 Moddex Group,2,num_countries
+Moddex Group,"[Handrails, Balustrades, Modular, Custom built, No-weld, Project Management, Supply, Installation, Design]",specialties_list
+Moddex Group,"NZ,AU",countries_list
 Cerclos,2546,follower_count
 Cerclos,28,company_size_on_linkedin
 Cerclos,2009,founded_year
 Cerclos,35,num_specialties
 Cerclos,4,num_countries
+Cerclos,"[Life Cycle Assessment, LCA Software, Construction, Net Zero Infrastructure, Net Zero Construction, Net Zero Building, Life Cycle Costing, Whole Life Carbon, Life Cycle Carbon, Net Zero Emissions, Net Zero Software, Zero Carbon, LCA, Sustainable Design, Sustainable Infrastructure, Sustainable Building, Sustainable Homes, Sustainable Strategy, Carbon Footprint , Carbon Management, Green Star, Green Building, ISC, PAS 2080, RICS, BREEAM, LEED, Embodied Carbon, Operational Carbon, BIM, Carbon Reporting, GLA Reporting, GHG Reporting, LCA Tool, Sustainable Design Tool]",specialties_list
+Cerclos,"GB,NZ,BR,AU",countries_list
 WeightWatchers,77305,follower_count
 WeightWatchers,1,num_specialties
 WeightWatchers,0,num_countries
+WeightWatchers,[],specialties_list
+WeightWatchers,,countries_list
 DEWC Services,1608,follower_count
 DEWC Services,44,company_size_on_linkedin
 DEWC Services,2011,founded_year
 DEWC Services,3,num_specialties
 DEWC Services,1,num_countries
+DEWC Services,"[Electronic Warfare, Defence, Space]",specialties_list
+DEWC Services,AU,countries_list
 Sophos,434130,follower_count
 Sophos,4686,company_size_on_linkedin
 Sophos,1985,founded_year
 Sophos,10,num_specialties
 Sophos,5,num_countries
+Sophos,"[IT Security, Next-Gen UTM (Unified Threat Management), Mobile Device Management, Endpoint Security, Antivirus, Email and Web Protection, Free Tools, Network Security, Server Protection, Managed Detection and Response (MDR)]",specialties_list
+Sophos,"GB,CA,PH,ES,US",countries_list
 Kaine Mathrick Tech - Cyber-First Managed Services,1671,follower_count
 Kaine Mathrick Tech - Cyber-First Managed Services,62,company_size_on_linkedin
 Kaine Mathrick Tech - Cyber-First Managed Services,2010,founded_year
 Kaine Mathrick Tech - Cyber-First Managed Services,17,num_specialties
 Kaine Mathrick Tech - Cyber-First Managed Services,1,num_countries
+Kaine Mathrick Tech - Cyber-First Managed Services,"[Managed Services, Cloud Consulting, Infrastructure Consulting, Systems Integration, IT Outsourcing, it support, IT Managed Services, Professional IT services, IT consulting, IT strategy, Cloud backup, disaster recovery, cyber security, Managed Cyber Security, MSSP, Microsoft Solution Partner, Copilot Microsoft 365]",specialties_list
+Kaine Mathrick Tech - Cyber-First Managed Services,AU,countries_list
 SEDA College VIC,738,follower_count
 SEDA College VIC,62,company_size_on_linkedin
 SEDA College VIC,4,num_specialties
 SEDA College VIC,1,num_countries
+SEDA College VIC,"[Practical Education, Industry Experience, Connection to Employment or Study, Life Education]",specialties_list
+SEDA College VIC,AU,countries_list
 Informatica,314734,follower_count
 Informatica,5648,company_size_on_linkedin
 Informatica,16,num_specialties
 Informatica,0,num_countries
+Informatica,"[Data Governance, Data Catalog, Data Marketplace, Data Quality, Enterprise Cloud Data Integration, Cloud Data Integration, Master Data Management, B2B Data Exchange, Application ILM, Complex Event Processing, Data Replication, Data Masking, Data Virtualization, Messaging, Big Data, Identity Resolution]",specialties_list
+Informatica,,countries_list
 Cordelta,1558,follower_count
 Cordelta,61,company_size_on_linkedin
 Cordelta,2004,founded_year
 Cordelta,14,num_specialties
 Cordelta,1,num_countries
+Cordelta,"[Strategy and Planning, Business Transformation, Project Services, Procurement, Finance and Acccounting, Technology Services, Business Architecture, Information Management, Security, Enterprise Architecture, Digital Services, Cybersecurity, Governance, Risk and Compliance]",specialties_list
+Cordelta,AU,countries_list
 Sentrian Pty Ltd,2657,follower_count
 Sentrian Pty Ltd,48,company_size_on_linkedin
 Sentrian Pty Ltd,1992,founded_year
 Sentrian Pty Ltd,21,num_specialties
 Sentrian Pty Ltd,1,num_countries
+Sentrian Pty Ltd,"[Microsoft, VMware, Symantec, IBM, HP, Dell, Managed Services, AWS, Microsoft CSP, IT Security, Telecommunications, Microsoft Teams, Telephony, Hosted PBX, Virtualisation, Desktop Support, Microsoft Azure, Networking, IT Support, IT Strategy , vCIO]",specialties_list
+Sentrian Pty Ltd,AU,countries_list
 Luminary,10478,follower_count
 Luminary,59,company_size_on_linkedin
 Luminary,2018,founded_year
 Luminary,1,num_specialties
 Luminary,1,num_countries
+Luminary,[],specialties_list
+Luminary,US,countries_list
 Hub Australia,6870,follower_count
 Hub Australia,149,company_size_on_linkedin
 Hub Australia,2011,founded_year
 Hub Australia,23,num_specialties
 Hub Australia,1,num_countries
+Hub Australia,"[Coworking, Office Space, Commercial Real Estate, Community, Shared Spaces, Meetings and Events, Business Community, Memberships, Workspaces, Small Business , Project Teams, Entrepreneurs, Hospitality, Customer Service, Australian Owned , Future of Work, Hospitality, Hybrid Work, Shared Office, Serviced Offices, Virtual Office, Corporate Solutions, Landlord Partnerships]",specialties_list
+Hub Australia,AU,countries_list
 Charterhouse Middle East,627758,follower_count
 Charterhouse Middle East,24,company_size_on_linkedin
 Charterhouse Middle East,2003,founded_year
 Charterhouse Middle East,13,num_specialties
 Charterhouse Middle East,0,num_countries
+Charterhouse Middle East,"[Financial Services, Legal & Compliance, Construction & Property, IT & Telecommunications, Accountancy & Finance, Professional Support, Human Resources, Sales & Technical Sales, Supply Chain, Retail & Hospitality, Energy, Management Consultancy, Marketing & Digital]",specialties_list
+Charterhouse Middle East,,countries_list
 nan,0,num_specialties
 nan,0,num_countries
+nan,,specialties_list
+nan,,countries_list
 Biogen,1021987,follower_count
 Biogen,8215,company_size_on_linkedin
 Biogen,1,num_specialties
 Biogen,0,num_countries
+Biogen,[],specialties_list
+Biogen,,countries_list
 Mantel Group,24087,follower_count
 Mantel Group,825,company_size_on_linkedin
 Mantel Group,6,num_specialties
 Mantel Group,2,num_countries
+Mantel Group,"[Artificial Intelligence, Cloud, Software, Consulting, Data, Security]",specialties_list
+Mantel Group,"NZ,AU",countries_list
 BPAY Group Limited,2,follower_count
 BPAY Group Limited,4,company_size_on_linkedin
 BPAY Group Limited,1987,founded_year
 BPAY Group Limited,1,num_specialties
 BPAY Group Limited,1,num_countries
+BPAY Group Limited,[],specialties_list
+BPAY Group Limited,AU,countries_list
 OMD Australia,27546,follower_count
 OMD Australia,2000,founded_year
 OMD Australia,1,num_specialties
 OMD Australia,1,num_countries
+OMD Australia,[],specialties_list
+OMD Australia,AU,countries_list
 Thoughtworks,620619,follower_count
 Thoughtworks,11288,company_size_on_linkedin
 Thoughtworks,19,num_specialties
 Thoughtworks,17,num_countries
+Thoughtworks,"[Agile Development (Scrum, XP, Lean), Retail Customer Experience Consulting, Management Consulting, Data Science and Analytics, Product Innovation, Open Source Communities, Continuous Delivery, User Experience Design, Agile Development Tools, Mobile Strategy, AI, Data and Analytics, Cloud, Platforms, Customer Experience and Products, Software Defined Vehicles, Software Engineering]",specialties_list
+Thoughtworks,"GB,CN,CL,IN,AU,CA,SG,IT,FI,DE,RO,ES,TH,EC,US,BR,NL",countries_list
 Canstar Resources,405,follower_count
 Canstar Resources,8,company_size_on_linkedin
 Canstar Resources,1,num_specialties
 Canstar Resources,1,num_countries
+Canstar Resources,[],specialties_list
+Canstar Resources,CA,countries_list
 InfoTrack US,11708,follower_count
 InfoTrack US,213,company_size_on_linkedin
 InfoTrack US,11,num_specialties
 InfoTrack US,1,num_countries
+InfoTrack US,"[eFiling, Service of Process, eSignatures, DocketSyncing, 1099s Filing, Integration, Courtesy Copy Delivery, eService, Physical Filing, Court Filing, Process Serving]",specialties_list
+InfoTrack US,US,countries_list
 UKG,203761,follower_count
 UKG,14118,company_size_on_linkedin
 UKG,1,num_specialties
 UKG,0,num_countries
+UKG,[],specialties_list
+UKG,,countries_list
 Adobe,4712641,follower_count
 Adobe,42595,company_size_on_linkedin
 Adobe,1982,founded_year
 Adobe,16,num_specialties
 Adobe,6,num_countries
+Adobe,"[Software, Creative Cloud, Digital Marketing, Web Experience Management, Digital Media, Creative Suite, Digital Publishing, Photoshop, Online Analytics, Illustrator, Touch Apps, Acrobat, Mobile Apps, Social Marketing, Web Marketing, Social Measurement]",specialties_list
+Adobe,"FR,AU,CA,DE,RO,US",countries_list
 AbbVie,1413838,follower_count
 AbbVie,54472,company_size_on_linkedin
 AbbVie,13,num_specialties
 AbbVie,74,num_countries
+AbbVie,"[Biopharmaceutical, Biotechnology, Innovation, Research and Development, Manufacturing, Biotherapeutics, Oncology, Immunology, Virology, Neuroscience, Womens Health, Aesthetics, Eye Care]",specialties_list
+AbbVie,"IN,CA,UA,PH,DE,GT,PL,BD,EC,SV,US,GR,EG,BR,KW,PR,JP,NL,FR,CN,CL,BB,SE,AU,PE,IT,LK,AT,FI,HN,RO,MY,VE,MX,ZA,JO,BO,LB,NZ,TR,AR,PS,IL,TH,VN,CH,SG,ID,RU,SK,CZ,KR,HK,IE,TW,DK,PT,CO,GB,DO,PA,RS,AE,UY,BH,PK,YE,ES,JM,TT,HU,SA,BE,CR",countries_list
 Carnival Australia,20387,follower_count
 Carnival Australia,353,company_size_on_linkedin
 Carnival Australia,1932,founded_year
 Carnival Australia,11,num_specialties
 Carnival Australia,1,num_countries
+Carnival Australia,"[Travel, Leisure, Cruise Ships, Hospitality, Casino, Food & Beverage, Restaurants, Bars, Entertainment, Holidays, Diversity]",specialties_list
+Carnival Australia,AU,countries_list
 Novo Nordisk,2047181,follower_count
 Novo Nordisk,59902,company_size_on_linkedin
 Novo Nordisk,1923,founded_year
 Novo Nordisk,5,num_specialties
 Novo Nordisk,9,num_countries
+Novo Nordisk,"[Pharmaceuticals, Insulin, obesity, Rare Diseases, Diabetes]",specialties_list
+Novo Nordisk,"FR,AE,CL,CH,IN,DK,PL,US,BR",countries_list
 Medtronic,1993024,follower_count
 Medtronic,92919,company_size_on_linkedin
 Medtronic,1,num_specialties
 Medtronic,7,num_countries
+Medtronic,[],specialties_list
+Medtronic,"CH,SG,AT,ES,US,BR,NL",countries_list
 General Mills,686336,follower_count
 General Mills,24022,company_size_on_linkedin
 General Mills,1928,founded_year
 General Mills,4,num_specialties
 General Mills,1,num_countries
+General Mills,"[Food Production, Marketing, Consumer Packaged Goods, CPG]",specialties_list
+General Mills,US,countries_list
 WorkflowMax by BlueRock,1599,follower_count
 WorkflowMax by BlueRock,19,company_size_on_linkedin
 WorkflowMax by BlueRock,2023,founded_year
 WorkflowMax by BlueRock,14,num_specialties
 WorkflowMax by BlueRock,1,num_countries
+WorkflowMax by BlueRock,"[Job management, Project management, Small business, Medium business, Large business, ERP, Lead management, Quoting & Estimating, Invoicing, Job costing, Task management, Time tracking, Reporting, Xero integration ]",specialties_list
+WorkflowMax by BlueRock,AU,countries_list
 Insight,403613,follower_count
 Insight,16269,company_size_on_linkedin
 Insight,1988,founded_year
 Insight,28,num_specialties
 Insight,8,num_countries
+Insight,"[Cloud Computing, Managed Service Provider Solutions, Data Center Management, Unified Communication & Collaboration, Network Security Management, Data Protection, Mobility, Network & Security, Office Productivity, K-12 IT Solutions, IT Asset Disposal, Healthcare IT, Digital Innvoation, Supply Chain Optimization, Connected Workforce, software management, IT management, Procurement, Mobility, Microsoft Products, IT Services, IT Solutions, Innovation, E-commerce, IT Asset Management, Cloud and Software Licensing, Cloud Services, Intelligent Technology]",specialties_list
+Insight,"GB,SE,SG,AU,DE,ES,US,NZ",countries_list
 Aussie Broadband,14962,follower_count
 Aussie Broadband,894,company_size_on_linkedin
 Aussie Broadband,2003,founded_year
 Aussie Broadband,11,num_specialties
 Aussie Broadband,1,num_countries
+Aussie Broadband,"[Internet, Private IP Networking, Business Broadband, Hosted Telepresence Video Conferencing, IP Telephony, Hosted Voice Communications, Fixed Phone, Co-location Data Centre, nbn , Business nbn, Mobile Phones]",specialties_list
+Aussie Broadband,AU,countries_list
 H&H Group,67710,follower_count
 H&H Group,1807,company_size_on_linkedin
 H&H Group,22,num_specialties
 H&H Group,14,num_countries
+H&H Group,"[Baby nutrition and care, Beauty, Adult nutrition, Skincare, Health food, Nutrition, Probiotics, Infant Nutrition, Consumer goods, Vitamins, Supplements, Personal care, Infant milk formula, Baby care, Baby products, Children's nutrition, Children's snacks, Health and wellness, Wellness, FMCG, Organic, Sustainability]",specialties_list
+H&H Group,"FR,CN,GB,AE,CH,SG,AU,IN,IT,HK,TH,US,NZ,NL",countries_list
 Yahoo,713387,follower_count
 Yahoo,8412,company_size_on_linkedin
 Yahoo,11,num_specialties
 Yahoo,0,num_countries
+Yahoo,"[innovation, internet, technology, advertising, media, consumer services, search, user experience, seo, online advertising, internet marketing]",specialties_list
+Yahoo,,countries_list
 nan,0,num_specialties
 nan,0,num_countries
+nan,,specialties_list
+nan,,countries_list
 NeuroRehab Allied Health Network / NeuroJunior Allied Health,1187,follower_count
 NeuroRehab Allied Health Network / NeuroJunior Allied Health,122,company_size_on_linkedin
 NeuroRehab Allied Health Network / NeuroJunior Allied Health,2005,founded_year
 NeuroRehab Allied Health Network / NeuroJunior Allied Health,12,num_specialties
 NeuroRehab Allied Health Network / NeuroJunior Allied Health,1,num_countries
+NeuroRehab Allied Health Network / NeuroJunior Allied Health,"[Physiotherapy, Occupational Therapy, Speech Pathology, Psychology, Music Therapy, Exercise Physiology, Dietetics, Remedial Massage, Neuro injuries and conditions, ndis, music therapy, rehabilitation]",specialties_list
+NeuroRehab Allied Health Network / NeuroJunior Allied Health,AU,countries_list
 Macquarie Technology Group,30681,follower_count
 Macquarie Technology Group,1992,founded_year
 Macquarie Technology Group,15,num_specialties
 Macquarie Technology Group,1,num_countries
+Macquarie Technology Group,"[Cloud Computing, Server Hosting, PCI Compliance, Australian Data Centre, Mission Critical Hosting, SaaS Hosting, Mobility Management, NBN, eCommerce Hosting, Colocation Australia, Hybrid Cloud, Cloud Hosting, Private Cloud Hosting, Business Continuity, Cyber Security]",specialties_list
+Macquarie Technology Group,AU,countries_list
 Coleman Greig Lawyers,4119,follower_count
 Coleman Greig Lawyers,87,company_size_on_linkedin
 Coleman Greig Lawyers,1928,founded_year
 Coleman Greig Lawyers,18,num_specialties
 Coleman Greig Lawyers,1,num_countries
+Coleman Greig Lawyers,"[Commercial Law, Family Law, Residential Conveyancing, Commercial Property, Employment Law & WHS, Business Succession Planning, Debt Recovery, Wills & Estate Planning, Public Notary Services, Intellectual Property, Litigation and Disputes, Retirement Living, Franchising, Family Law Mediation & Arbitration, Taxation, Superannuation, Trusts, Wind Solar Farming]",specialties_list
+Coleman Greig Lawyers,AU,countries_list
 CrowdStrike,729175,follower_count
 CrowdStrike,9192,company_size_on_linkedin
 CrowdStrike,10,num_specialties
 CrowdStrike,1,num_countries
+CrowdStrike,"[Next-Generation Endpoint Protection, Endpoint Detection and Response, Next Generation Anti-Virus, Managed Threat Hunting, Incident Response, Threat Intelligence, Malware Prevention, Malware Detection, Machine Learning, Cloud-Delivered Endpoint Protection]",specialties_list
+CrowdStrike,US,countries_list
 nan,0,num_specialties
 nan,0,num_countries
+nan,,specialties_list
+nan,,countries_list
 4 Pines Brewing Company Pty Ltd,5314,follower_count
 4 Pines Brewing Company Pty Ltd,118,company_size_on_linkedin
 4 Pines Brewing Company Pty Ltd,2008,founded_year
 4 Pines Brewing Company Pty Ltd,7,num_specialties
 4 Pines Brewing Company Pty Ltd,1,num_countries
+4 Pines Brewing Company Pty Ltd,"[Brewing, Hospitality, Lifestyle, Exceptional Beer, Customer Experience, Employee Culture, Social & Environmental Responsibility]",specialties_list
+4 Pines Brewing Company Pty Ltd,AU,countries_list
 Cisco,6555976,follower_count
 Cisco,100460,company_size_on_linkedin
 Cisco,1984,founded_year
 Cisco,11,num_specialties
 Cisco,16,num_countries
+Cisco,"[Networking, Wireless, Security, Unified Communication, Cloud, Collaboration, Data Center, Virtualization, Unified Computing Systems, Artificial Intelligence, Observability]",specialties_list
+Cisco,"GB,FR,SG,AU,CA,UA,HK,AT,DE,PL,ES,MX,US,HU,BR,NO",countries_list
 DHL,2309125,follower_count
 DHL,196793,company_size_on_linkedin
 DHL,6,num_specialties
 DHL,7,num_countries
+DHL,"[world leader Air Freight, Project Cargo, specialist world leader sea freight, Contract Logistics, world leader consolidator, vertical market specialists]",specialties_list
+DHL,"CL,SK,DE,MX,US,NL,CO",countries_list
 Salesforce,5421155,follower_count
 Salesforce,78943,company_size_on_linkedin
 Salesforce,1,num_specialties
 Salesforce,10,num_countries
+Salesforce,[Enterprise Cloud Computing and Customer Relationship Management],specialties_list
+Salesforce,"GB,FR,CH,AU,IT,DE,ES,US,JP,IL",countries_list
 REA Group,105771,follower_count
 REA Group,3583,company_size_on_linkedin
 REA Group,5,num_specialties
 REA Group,0,num_countries
+REA Group,"[online, media, property, digital, mobile]",specialties_list
+REA Group,,countries_list
 Atlassian,1591027,follower_count
 Atlassian,18706,company_size_on_linkedin
 Atlassian,2002,founded_year
 Atlassian,9,num_specialties
 Atlassian,5,num_countries
+Atlassian,"[b2b enterprise software, bug tracker, issue tracker, enterprise wiki, corporate wiki, business wiki, team collaboration, project management, downtime communication]",specialties_list
+Atlassian,"IN,AU,US,TR,NL",countries_list
 Strategic Sustainability Consulting,6678,follower_count
 Strategic Sustainability Consulting,5,company_size_on_linkedin
 Strategic Sustainability Consulting,2005,founded_year
 Strategic Sustainability Consulting,6,num_specialties
 Strategic Sustainability Consulting,1,num_countries
+Strategic Sustainability Consulting,"[sustainability planning and assessments, sustainability reporting, green audit, strategic planning, communications and employee engagement, training and facilitation]",specialties_list
+Strategic Sustainability Consulting,US,countries_list
 This Is Flow,1794,follower_count
 This Is Flow,40,company_size_on_linkedin
 This Is Flow,2013,founded_year
 This Is Flow,7,num_specialties
 This Is Flow,1,num_countries
+This Is Flow,"[Video Production, Media Planning and Buying, Graphic Design, Writing, Digital Advertising, Data Science, Strategy and Insight]",specialties_list
+This Is Flow,AU,countries_list
 LOTUS,4417,follower_count
 LOTUS,201,company_size_on_linkedin
 LOTUS,2007,founded_year
 LOTUS,15,num_specialties
 LOTUS,1,num_countries
+LOTUS,"[PR, Public Relations, Marketing, Sales, Trade Representation, Digital Amplification, Experiential and Events, Crisis Communications, Reputation Management, Partnerships, Influencer Engagement, Media Buying, Content, Data Intelligence, Design]",specialties_list
+LOTUS,GB,countries_list
 nan,0,num_specialties
 nan,0,num_countries
+nan,,specialties_list
+nan,,countries_list
 Stamford Capital Australia,5974,follower_count
 Stamford Capital Australia,36,company_size_on_linkedin
 Stamford Capital Australia,2010,founded_year
 Stamford Capital Australia,10,num_specialties
 Stamford Capital Australia,1,num_countries
+Stamford Capital Australia,"[Commercial Property Finance, Principal Investments, Advisory, Structured Finance, Mezzanine Debt finance, Senior Debt funding, Stretched senior debt, Preferred equity, Development finance, Construction finance]",specialties_list
+Stamford Capital Australia,AU,countries_list
 Pragma,2614,follower_count
 Pragma,37,company_size_on_linkedin
 Pragma,2012,founded_year
 Pragma,13,num_specialties
 Pragma,1,num_countries
+Pragma,"[call centre, unified communications, business communications, Ericsson-LG, cloud, hosted telephony, cloud uc, ucaas, telephony, telecommunication, telecoms, social wifi, applications]",specialties_list
+Pragma,GB,countries_list
 Amstelveen,2070,follower_count
 Amstelveen,35,company_size_on_linkedin
 Amstelveen,2016,founded_year
 Amstelveen,9,num_specialties
 Amstelveen,1,num_countries
+Amstelveen,"[Technology, Risk, Assurance, Project Management, Audit, Technology Risk, Project Assurance, Project Risk, PMO]",specialties_list
+Amstelveen,AU,countries_list
 Inspire Advisors & Certified Public Accountants,155,follower_count
 Inspire Advisors & Certified Public Accountants,8,company_size_on_linkedin
 Inspire Advisors & Certified Public Accountants,1,num_specialties
 Inspire Advisors & Certified Public Accountants,1,num_countries
+Inspire Advisors & Certified Public Accountants,[],specialties_list
+Inspire Advisors & Certified Public Accountants,US,countries_list
 ICD Property,5455,follower_count
 ICD Property,27,company_size_on_linkedin
 ICD Property,2009,founded_year
 ICD Property,1,num_specialties
 ICD Property,1,num_countries
+ICD Property,[Property Development],specialties_list
+ICD Property,AU,countries_list
 nan,0,num_specialties
 nan,0,num_countries
+nan,,specialties_list
+nan,,countries_list
 Four Drunk Parrots,709,follower_count
 Four Drunk Parrots,6,company_size_on_linkedin
 Four Drunk Parrots,2018,founded_year
 Four Drunk Parrots,14,num_specialties
 Four Drunk Parrots,1,num_countries
+Four Drunk Parrots,"[CMO, Marketing Strategy, Social Media, MarTech, Marketing Technology, Lead Generation, Full Stack Development, Web Development, Sustainability, Search Engine Optimisation, Search Engine Marketing, Brand Development, Public Relations, Brand Design]",specialties_list
+Four Drunk Parrots,AU,countries_list
 Seiva Technologies LLC,111,follower_count
 Seiva Technologies LLC,2,company_size_on_linkedin
 Seiva Technologies LLC,2015,founded_year
 Seiva Technologies LLC,1,num_specialties
 Seiva Technologies LLC,1,num_countries
+Seiva Technologies LLC,[],specialties_list
+Seiva Technologies LLC,US,countries_list
 Pendula,1809,follower_count
 Pendula,2015,founded_year
 Pendula,1,num_specialties
 Pendula,1,num_countries
+Pendula,[],specialties_list
+Pendula,AU,countries_list
 CreativeCubes.Co,4215,follower_count
 CreativeCubes.Co,26,company_size_on_linkedin
 CreativeCubes.Co,2017,founded_year
 CreativeCubes.Co,10,num_specialties
 CreativeCubes.Co,1,num_countries
+CreativeCubes.Co,"[Business Services, Entrepreneurship, events, coworking, community, private office, flexible office space, meeting rooms, shared offices, CRE]",specialties_list
+CreativeCubes.Co,AU,countries_list
 Engaging.io,530,follower_count
 Engaging.io,21,company_size_on_linkedin
 Engaging.io,2009,founded_year
 Engaging.io,18,num_specialties
 Engaging.io,1,num_countries
+Engaging.io,"[Marketing strategy, Marketing automation and lead generation, Media strategy, Digital advertising, UX / UI, Prototyping, Systems integration, E-commerce websites, Bespoke / speciality websites, Custom integration, User centred design, Tech stack integration, Being generally awesome and nice to everyone, sales and marketing alignment, digital transformation, HubSpot CRM specialist, CRM migrations, RevOps]",specialties_list
+Engaging.io,AU,countries_list
 "NEOLink, global digital logistics and supply chain solution",118,follower_count
 "NEOLink, global digital logistics and supply chain solution",10,company_size_on_linkedin
 "NEOLink, global digital logistics and supply chain solution",1,num_specialties
 "NEOLink, global digital logistics and supply chain solution",0,num_countries
+"NEOLink, global digital logistics and supply chain solution",[],specialties_list
+"NEOLink, global digital logistics and supply chain solution",,countries_list
 SAO PROPERTY DEVELOPMENT AND INVESTMENT LTD,166,follower_count
 SAO PROPERTY DEVELOPMENT AND INVESTMENT LTD,6,company_size_on_linkedin
 SAO PROPERTY DEVELOPMENT AND INVESTMENT LTD,1,num_specialties
 SAO PROPERTY DEVELOPMENT AND INVESTMENT LTD,0,num_countries
+SAO PROPERTY DEVELOPMENT AND INVESTMENT LTD,[],specialties_list
+SAO PROPERTY DEVELOPMENT AND INVESTMENT LTD,,countries_list
 Howden Insurance Brokers Australia,2788,follower_count
 Howden Insurance Brokers Australia,74,company_size_on_linkedin
 Howden Insurance Brokers Australia,2021,founded_year
 Howden Insurance Brokers Australia,1,num_specialties
 Howden Insurance Brokers Australia,1,num_countries
+Howden Insurance Brokers Australia,[],specialties_list
+Howden Insurance Brokers Australia,AU,countries_list
 Response Security Services,1211,follower_count
 Response Security Services,14,company_size_on_linkedin
 Response Security Services,2011,founded_year
 Response Security Services,1,num_specialties
 Response Security Services,1,num_countries
+Response Security Services,[],specialties_list
+Response Security Services,AU,countries_list
 EFCOMM Sales and Marketing Solutions Pty Ltd,7,company_size_on_linkedin
 EFCOMM Sales and Marketing Solutions Pty Ltd,1,num_specialties
 EFCOMM Sales and Marketing Solutions Pty Ltd,1,num_countries
+EFCOMM Sales and Marketing Solutions Pty Ltd,[],specialties_list
+EFCOMM Sales and Marketing Solutions Pty Ltd,,countries_list
 nan,0,num_specialties
 nan,0,num_countries
+nan,,specialties_list
+nan,,countries_list
 Miro,422254,follower_count
 Miro,2869,company_size_on_linkedin
 Miro,2011,founded_year
 Miro,1,num_specialties
 Miro,8,num_countries
+Miro,[],specialties_list
+Miro,"GB,FR,AU,DE,AM,US,JP,NL",countries_list
 Displayr,20742,follower_count
 Displayr,98,company_size_on_linkedin
 Displayr,10,num_specialties
 Displayr,0,num_countries
+Displayr,"[Data science, Statistics, Analysis software, Survey analysis software, Visualization, Dashboards, Saas, Market Research, Online Dashboards, Online reporting]",specialties_list
+Displayr,,countries_list
 Dovetail Genomics,7011,follower_count
 Dovetail Genomics,2013,founded_year
 Dovetail Genomics,12,num_specialties
 Dovetail Genomics,1,num_countries
+Dovetail Genomics,"[Genome assembly, Genomics, de novo assembly , scaffolding , proximity ligation , gap filling , HiChIP, Micro-C, Epigenetics, ChIP-seq, Chromatin topology, 3D chromosome architecture]",specialties_list
+Dovetail Genomics,US,countries_list
 SixPivot,1859,follower_count
 SixPivot,39,company_size_on_linkedin
 SixPivot,2015,founded_year
 SixPivot,11,num_specialties
 SixPivot,1,num_countries
+SixPivot,"[Software Development, .NET, Consultancy, Software Product Development, Cloud Strategy, Continuous Innovation, Minimum Viable Product, Feature Development, Training, Azure, Application Development]",specialties_list
+SixPivot,AU,countries_list
 AvePoint,101012,follower_count
 AvePoint,1798,company_size_on_linkedin
 AvePoint,2001,founded_year
 AvePoint,13,num_specialties
 AvePoint,14,num_countries
+AvePoint,"[SharePoint Governance, SharePoint Migration, SharePoint Management, SharePoint Integration, SharePoint Optimization, SharePoint Reporting, SharePoint Protection, Office 365 Migration, Office 365 Management, Office 365 Protection, Office 365 Governance, Microsoft Teams Governance, Power Platform Governance]",specialties_list
+AvePoint,"GB,FR,CN,SE,CH,AU,SG,PH,DE,ZA,US,JP,NL,VN",countries_list
 Attach2,3666,follower_count
 Attach2,63,company_size_on_linkedin
 Attach2,2003,founded_year
 Attach2,4,num_specialties
 Attach2,2,num_countries
+Attach2,"[Excavator Attachments, Hydraulic Quick Couplers, Construction Equipment, Tilting Hydraulic Quick Couplers]",specialties_list
+Attach2,"NZ,AU",countries_list
 The FSC Group,396,follower_count
 The FSC Group,42,company_size_on_linkedin
 The FSC Group,1989,founded_year
 The FSC Group,6,num_specialties
 The FSC Group,1,num_countries
+The FSC Group,"[Own label food ranges, Food Consultancy, International Experience, End to end management of chilled, frozen & ambient product ranges., 25 years of award winning experience]",specialties_list
+The FSC Group,GB,countries_list
 Kasada,4421,follower_count
 Kasada,108,company_size_on_linkedin
 Kasada,2015,founded_year
 Kasada,22,num_specialties
 Kasada,0,num_countries
+Kasada,"[Web Security, Automated Attack Mitigation, Bot Mitigation, Application Security, API Security, Mobile Security, Cybersecurity, InfoSec, Bot Management, Fraud Prevention, Bot Defense, Bot Detection, Automated Threat Prevention, Enterprise Software, Security Software, Bot Protection, Web Application Security, Website Security, Credential Stuffing Prevention, Account Takeover Prevention, Anti-Bot Software, API Security]",specialties_list
+Kasada,,countries_list
 Kaine Mathrick Tech - Cyber-First Managed Services,1671,follower_count
 Kaine Mathrick Tech - Cyber-First Managed Services,62,company_size_on_linkedin
 Kaine Mathrick Tech - Cyber-First Managed Services,2010,founded_year
 Kaine Mathrick Tech - Cyber-First Managed Services,17,num_specialties
 Kaine Mathrick Tech - Cyber-First Managed Services,1,num_countries
+Kaine Mathrick Tech - Cyber-First Managed Services,"[Managed Services, Cloud Consulting, Infrastructure Consulting, Systems Integration, IT Outsourcing, it support, IT Managed Services, Professional IT services, IT consulting, IT strategy, Cloud backup, disaster recovery, cyber security, Managed Cyber Security, MSSP, Microsoft Solution Partner, Copilot Microsoft 365]",specialties_list
+Kaine Mathrick Tech - Cyber-First Managed Services,AU,countries_list
 nan,0,num_specialties
 nan,0,num_countries
+nan,,specialties_list
+nan,,countries_list
 Beaumont People,16660,follower_count
 Beaumont People,90,company_size_on_linkedin
 Beaumont People,2001,founded_year
 Beaumont People,8,num_specialties
 Beaumont People,1,num_countries
+Beaumont People,"[Business Services, Contact Centre & Sales, Associations & Memberships, Not For Profit, Education, Health & Social Care, Sales, Recruitment]",specialties_list
+Beaumont People,AU,countries_list
 TKV Group,2806,follower_count
 TKV Group,45,company_size_on_linkedin
 TKV Group,2020,founded_year
 TKV Group,1,num_specialties
 TKV Group,1,num_countries
+TKV Group,[],specialties_list
+TKV Group,AU,countries_list
 Scalapay,45426,follower_count
 Scalapay,204,company_size_on_linkedin
 Scalapay,2019,founded_year
 Scalapay,9,num_specialties
 Scalapay,5,num_countries
+Scalapay,"[Online Payments, E-commerce, Retail, BNPL, Financial Services, Buy Now Pay Later, Finance, Fintech, Marketing]",specialties_list
+Scalapay,"FR,AU,IT,IE,ES",countries_list
 Struber,3035,follower_count
 Struber,61,company_size_on_linkedin
 Struber,2013,founded_year
 Struber,34,num_specialties
 Struber,1,num_countries
+Struber,"[Major project communications, Community consultation, Marketing and Branding, stakeholder engagement, Bid and tender writing, Corporate writing, Government communications, Infrastructure communications, Public Relations, Digital Engagement, Website Development, Engagement Marketing, community engagement, social media, paid advertising, video, augmented reality, virtual reality, infrastructure, transport, government, citizen engagement, public participation, landholder liason, planning, change management, photography, video production, animation, Social Licence, supply chain participation, change management, culture management, independent advice ]",specialties_list
+Struber,AU,countries_list
 PhoenixDX,2263,follower_count
 PhoenixDX,67,company_size_on_linkedin
 PhoenixDX,2016,founded_year
 PhoenixDX,23,num_specialties
 PhoenixDX,1,num_countries
+PhoenixDX,"[OutSystems, Low Code, Mobile Application Development, Enterprise Application Development, Agile, Program Management, Digital Product Development, Software, digital transformation, user experience, training, legacy modernisation, software development, software solutions, Digital Experience Design, Customer Facing Applications, Custom Applications, Innovation Labs, Rapid Prototyping, Digital Solutions , OutSystems certification, Workflow , Critical Operational Systems]",specialties_list
+PhoenixDX,AU,countries_list
 Bluebird,47522,follower_count
 Bluebird,33,company_size_on_linkedin
 Bluebird,2020,founded_year
 Bluebird,14,num_specialties
 Bluebird,2,num_countries
+Bluebird,"[recruitment, headhunting, employee experience, hiring, career development, sales training, sales, saas, tech, FinTech, eCommerce, IT, Development, Marketing]",specialties_list
+Bluebird,"GB,NL",countries_list
 EstimateOne,9894,follower_count
 EstimateOne,123,company_size_on_linkedin
 EstimateOne,2010,founded_year
 EstimateOne,3,num_specialties
 EstimateOne,0,num_countries
+EstimateOne,"[Promoting tenders & awarded contracts for commercial builders, Tracking commercial construction leads for subcontractors & suppliers, Online tender management software for commercial builders]",specialties_list
+EstimateOne,,countries_list
 Zoom Recruitment,1926,follower_count
 Zoom Recruitment,137,company_size_on_linkedin
 Zoom Recruitment,2004,founded_year
 Zoom Recruitment,8,num_specialties
 Zoom Recruitment,1,num_countries
+Zoom Recruitment,"[Construction, Civil, Rail, Industrial, Food Industry, Heavy Industrial, Administration, Recruitment]",specialties_list
+Zoom Recruitment,AU,countries_list
 Baringa,70123,follower_count
 Baringa,2143,company_size_on_linkedin
 Baringa,2000,founded_year
 Baringa,24,num_specialties
 Baringa,11,num_countries
+Baringa,"[Financial Services, Consumer Products and Retail, Climate Risk, Digital transformation, Energy and Resources, Consumer Products and Retail, Government and Public Sector, Pharmaceuticals and Life Sciences, Technology, Media and Telecoms, Business Transformation, Data, Analytics and AI, CFO Advisory, Enterprise Value Creation, Operations and Organisational Transformation, People, Talent and Change, Strategy, Supply Chain and Procurement, Transaction Advisory, Strategy, Technology, AI]",specialties_list
+Baringa,"GB,CH,SG,AU,BG,DE,IE,ES,US,BE,NL",countries_list
 Sensei Project Solutions,3216,follower_count
 Sensei Project Solutions,21,company_size_on_linkedin
 Sensei Project Solutions,2012,founded_year
 Sensei Project Solutions,9,num_specialties
 Sensei Project Solutions,1,num_countries
+Sensei Project Solutions,"[Microsoft Project, Project and Portfolio Management, Microsoft Project Online , Microsoft Project for the web, Microsoft Power BI , Microsoft Dynamics, Enterprise Resource Management , Microsoft Power Platform , Scheduling ]",specialties_list
+Sensei Project Solutions,US,countries_list
 "ICOMM, Inc.",1689,follower_count
 "ICOMM, Inc.",80,company_size_on_linkedin
 "ICOMM, Inc.",1993,founded_year
 "ICOMM, Inc.",7,num_specialties
 "ICOMM, Inc.",1,num_countries
+"ICOMM, Inc.","[Telecom Expense Management, Technology Expense Management, Telecommunications Management, Telecom Carrier RFPs and Contracts, Mobile Device Optimization and Management, Telephony Systems RFPs and Contracts, Mobility Management Support]",specialties_list
+"ICOMM, Inc.",US,countries_list
 CloudWerx,2533,follower_count
 CloudWerx,80,company_size_on_linkedin
 CloudWerx,2020,founded_year
 CloudWerx,15,num_specialties
 CloudWerx,1,num_countries
+CloudWerx,"[Cloud Computing, Cloud Migration & Deployment, Enterprise Consulting, Google Cloud Platform, Amazon Web Services, IT Services, IAAS, CMaaS, Cloud Consulting, Cost Optimization, DevOps, Cyber Security Detection, Containerization, GenAI, AI/ML]",specialties_list
+CloudWerx,US,countries_list
 SafetyCulture,42158,follower_count
 SafetyCulture,782,company_size_on_linkedin
 SafetyCulture,2004,founded_year
 SafetyCulture,11,num_specialties
 SafetyCulture,5,num_countries
+SafetyCulture,"[App Development, UI/UX Design, Software Engineers, Platform Development, iOS Development, Android/Google Glass Devs, DevOps Engineer, Safety Apps, Inspection App, Software, Customer Success ]",specialties_list
+SafetyCulture,"GB,AU,PH,US,NL",countries_list
 Robert Half,3383311,follower_count
 Robert Half,29589,company_size_on_linkedin
 Robert Half,1948,founded_year
 Robert Half,19,num_specialties
 Robert Half,6,num_countries
+Robert Half,"[consulting services, accounting jobs, finance jobs, administrative jobs, legal jobs, IT jobs, recruitment, recruitment agency, creative jobs, staffing, hiring, employment agency, contract talent, contract professionals, talent solutions, contract employment, permanent placement, customer support jobs, marketing jobs]",specialties_list
+Robert Half,"GB,FR,AU,US,BR,BE",countries_list
 nan,0,num_specialties
 nan,0,num_countries
+nan,,specialties_list
+nan,,countries_list
 Intuit,763088,follower_count
 Intuit,17721,company_size_on_linkedin
 Intuit,1983,founded_year
 Intuit,1,num_specialties
 Intuit,9,num_countries
+Intuit,[],specialties_list
+Intuit,"GB,FR,SG,AU,CA,IN,US,BR,IL",countries_list
 DiUS,7753,follower_count
 DiUS,100,company_size_on_linkedin
 DiUS,18,num_specialties
 DiUS,2,num_countries
+DiUS,"[Product Strategy, Continuous Delivery, Software Development, Cloud, Architecture, Mobile, Real-Time Analytics, Quality Assurance, User Experience Design, Big Data, Deep Learning, Internet of Things, Machine Learning, Virtual Reality, Chat bots, AWS, Customer Experience , Product Development]",specialties_list
+DiUS,"NZ,AU",countries_list
 Medtronic,1993024,follower_count
 Medtronic,92919,company_size_on_linkedin
 Medtronic,1,num_specialties
 Medtronic,7,num_countries
+Medtronic,[],specialties_list
+Medtronic,"CH,SG,AT,ES,US,BR,NL",countries_list
 Red Hat,1363570,follower_count
 Red Hat,19947,company_size_on_linkedin
 Red Hat,1993,founded_year
 Red Hat,10,num_specialties
 Red Hat,0,num_countries
+Red Hat,"[cloud computing, hybrid cloud management, Linux, open source, virtualization, storage, middleware, containers, mobile, OpenStack]",specialties_list
+Red Hat,,countries_list
 Bristol Myers Squibb,1458804,follower_count
 Bristol Myers Squibb,37987,company_size_on_linkedin
 Bristol Myers Squibb,6,num_specialties
 Bristol Myers Squibb,5,num_countries
+Bristol Myers Squibb,"[biotechnology, innovation, great place to work, pharmaceuticals, research and development, healthcare]",specialties_list
+Bristol Myers Squibb,"CN,IE,DE,US,BE",countries_list
 Insights,113554,follower_count
 Insights,1993,founded_year
 Insights,6,num_specialties
 Insights,12,num_countries
+Insights,"[Leadership development, Team Effectiveness, Leading through change, People Development, Maximising personal effectiveness, Employee Engagment]",specialties_list
+Insights,"GB,FR,CH,SG,AU,CA,DE,PL,ES,US,BE,NL",countries_list
 HealthEngine LLC,337,follower_count
 HealthEngine LLC,11,company_size_on_linkedin
 HealthEngine LLC,2012,founded_year
 HealthEngine LLC,1,num_specialties
 HealthEngine LLC,1,num_countries
+HealthEngine LLC,[Healthcare],specialties_list
+HealthEngine LLC,US,countries_list
 HP,5146002,follower_count
 HP,124918,company_size_on_linkedin
 HP,1,num_specialties
 HP,8,num_countries
+HP,[],specialties_list
+HP,"FR,SG,CZ,DK,RO,BG,ES,US",countries_list
 Swiss Healthcare Startups,9083,follower_count
 Swiss Healthcare Startups,11,company_size_on_linkedin
 Swiss Healthcare Startups,2016,founded_year
 Swiss Healthcare Startups,3,num_specialties
 Swiss Healthcare Startups,1,num_countries
+Swiss Healthcare Startups,"[Vernetzung, Startups, Plattform]",specialties_list
+Swiss Healthcare Startups,CH,countries_list
 Tick Tock,511,follower_count
 Tick Tock,18,company_size_on_linkedin
 Tick Tock,2004,founded_year
 Tick Tock,1,num_specialties
 Tick Tock,1,num_countries
+Tick Tock,[],specialties_list
+Tick Tock,AU,countries_list
 Denver Technology,2016,follower_count
 Denver Technology,1989,founded_year
 Denver Technology,18,num_specialties
 Denver Technology,2,num_countries
+Denver Technology,"[Infrastructure & Cloud, Networking & Security, Application Services, Managed Services, Enterprise Asset Management, IT Consulting, Mining, Oil & Gas, Engineering Services, cybersecurity, digital, Operational Technologies, data and integration, design and development, manufacturing environments, Consulting, integration, Security Operations]",specialties_list
+Denver Technology,"GB,AU",countries_list
 Henry Schein,189319,follower_count
 Henry Schein,10016,company_size_on_linkedin
 Henry Schein,1932,founded_year
 Henry Schein,1,num_specialties
 Henry Schein,0,num_countries
+Henry Schein,[Dental Supplies and Medical Supplies],specialties_list
+Henry Schein,,countries_list
 Swyftx,14144,follower_count
 Swyftx,103,company_size_on_linkedin
 Swyftx,2018,founded_year
 Swyftx,1,num_specialties
 Swyftx,1,num_countries
+Swyftx,[],specialties_list
+Swyftx,AU,countries_list
 Smokeball - Legal Software,5871,follower_count
 Smokeball - Legal Software,140,company_size_on_linkedin
 Smokeball - Legal Software,2011,founded_year
 Smokeball - Legal Software,26,num_specialties
 Smokeball - Legal Software,2,num_countries
+Smokeball - Legal Software,"[Software, Legal IT, Cloud-Based Technology, Case Management Software, Personal Injury Law, Real Estate Law, Estate Planning & Probate, Email Management, Document Management, Family Law, Tax Law, Business Law, Time Tracking, legal technology, legal tech, billing, saas, law, lawyer, legal, workflows, service, innovation, practice management software, productivity, legal forms]",specialties_list
+Smokeball - Legal Software,"AU,US",countries_list
 Carlisle Homes,14975,follower_count
 Carlisle Homes,433,company_size_on_linkedin
 Carlisle Homes,2004,founded_year
 Carlisle Homes,5,num_specialties
 Carlisle Homes,1,num_countries
+Carlisle Homes,"[Home and Land Packages, New Home Designs, Land Estates, Knock Down Rebuild, Loan Studio]",specialties_list
+Carlisle Homes,AU,countries_list
 Ansarada,18027,follower_count
 Ansarada,210,company_size_on_linkedin
 Ansarada,2005,founded_year
 Ansarada,25,num_specialties
 Ansarada,6,num_countries
+Ansarada,"[Virtual data rooms, Due diligence, Mergers and Acquisitions, M&A, Online data rooms, Data sites, Software, Software as a Service, Data sharing , SaaS, Venture capital, Capital expansion, Private equity, Fundraising, Business tools, Initial public offering, Artificial Intelligence, Machine Learning, Corporate Finance, Transaction Facilitation, GRC, Board Management, ESG, Procurement, Tenders management]",specialties_list
+Ansarada,"GB,AU,ZA,US,NL,VN",countries_list
 Cisco,6555976,follower_count
 Cisco,100460,company_size_on_linkedin
 Cisco,1984,founded_year
 Cisco,11,num_specialties
 Cisco,16,num_countries
+Cisco,"[Networking, Wireless, Security, Unified Communication, Cloud, Collaboration, Data Center, Virtualization, Unified Computing Systems, Artificial Intelligence, Observability]",specialties_list
+Cisco,"GB,FR,SG,AU,CA,UA,HK,AT,DE,PL,ES,MX,US,HU,BR,NO",countries_list
 Hilton,2143320,follower_count
 Hilton,135772,company_size_on_linkedin
 Hilton,1919,founded_year
 Hilton,5,num_specialties
 Hilton,3,num_countries
+Hilton,"[Hospitality, Business Travel, Lesiure Travel, Vacations, Resorts]",specialties_list
+Hilton,"GB,SG,US",countries_list
 TRC Group,85,follower_count
 TRC Group,9,company_size_on_linkedin
 TRC Group,2000,founded_year
 TRC Group,4,num_specialties
 TRC Group,1,num_countries
+TRC Group,"[recruitment, it consulting, outsourcing, recruitment technology]",specialties_list
+TRC Group,AU,countries_list
 nan,0,num_specialties
 nan,0,num_countries
+nan,,specialties_list
+nan,,countries_list
 Gridware,12808,follower_count
 Gridware,57,company_size_on_linkedin
 Gridware,2020,founded_year
 Gridware,1,num_specialties
 Gridware,0,num_countries
+Gridware,[],specialties_list
+Gridware,,countries_list
 Seatram,251,follower_count
 Seatram,10,company_size_on_linkedin
 Seatram,1990,founded_year
 Seatram,4,num_specialties
 Seatram,1,num_countries
+Seatram,"[Importing & Exporting, Sea Freight & Air Freight, Warehousing & Distribution, Projects]",specialties_list
+Seatram,AU,countries_list
 The Network,3838,follower_count
 The Network,14,company_size_on_linkedin
 The Network,2021,founded_year
 The Network,4,num_specialties
 The Network,1,num_countries
+The Network,"[future of work, startup, top performers, remote work]",specialties_list
+The Network,US,countries_list
 SCALERR,13967,follower_count
 SCALERR,17,company_size_on_linkedin
 SCALERR,2020,founded_year
 SCALERR,17,num_specialties
 SCALERR,5,num_countries
+SCALERR,"[Technology Vendor Recruitment, IT Services, Technology Executives, Software, Solution Architects, IT, start up, consulting, GTM, advisory , global expansion, growth consultants, scale up, partnerships , founder, venture captital, global]",specialties_list
+SCALERR,"GB,SG,AU,JP,IL",countries_list
 Welcome,5614,follower_count
 Welcome,151,company_size_on_linkedin
 Welcome,2020,founded_year
 Welcome,12,num_specialties
 Welcome,1,num_countries
+Welcome,"[virtual events, event marketing, field marketing, experiential marketing, brand marketing, virtual experiences, all hands, content marketing, webinar, demand generation, live video, video]",specialties_list
+Welcome,US,countries_list
 Tectum Group,4394,follower_count
 Tectum Group,195,company_size_on_linkedin
 Tectum Group,1981,founded_year
 Tectum Group,1,num_specialties
 Tectum Group,1,num_countries
+Tectum Group,[waterproofing of all kinds of roofs],specialties_list
+Tectum Group,BE,countries_list
 triSearch,3882,follower_count
 triSearch,23,company_size_on_linkedin
 triSearch,2018,founded_year
 triSearch,5,num_specialties
 triSearch,1,num_countries
+triSearch,"[Title Search, Company Search, Bankruptcy checks, Property searching, Manual Services]",specialties_list
+triSearch,AU,countries_list
 The Drive Group,122,follower_count
 The Drive Group,3,company_size_on_linkedin
 The Drive Group,2016,founded_year
 The Drive Group,1,num_specialties
 The Drive Group,1,num_countries
+The Drive Group,[],specialties_list
+The Drive Group,CA,countries_list
 Sensible,847,follower_count
 Sensible,27,company_size_on_linkedin
 Sensible,1,num_specialties
 Sensible,1,num_countries
+Sensible,[],specialties_list
+Sensible,US,countries_list
 Cox Purtell Staffing Services,48681,follower_count
 Cox Purtell Staffing Services,21,company_size_on_linkedin
 Cox Purtell Staffing Services,1994,founded_year
 Cox Purtell Staffing Services,8,num_specialties
 Cox Purtell Staffing Services,1,num_countries
+Cox Purtell Staffing Services,"[Accounting & Finance Recruitment, Marketing, Communications & Sales Recruitment, Business Support Recruitment, Permanent, Temporary & Contract Staff, Legal Business Support Recruitment, Government & Affiliates Recruitment]",specialties_list
+Cox Purtell Staffing Services,AU,countries_list
 nan,0,num_specialties
 nan,0,num_countries
+nan,,specialties_list
+nan,,countries_list
 Corporeal Health,34,follower_count
 Corporeal Health,14,company_size_on_linkedin
 Corporeal Health,2014,founded_year
 Corporeal Health,5,num_specialties
 Corporeal Health,1,num_countries
+Corporeal Health,"[Injury Management, Workplace Rehabilitation, Exercise Physiology, Chronic Disease Management, Disability Services]",specialties_list
+Corporeal Health,AU,countries_list
 Volvo Financial Services,41640,follower_count
 Volvo Financial Services,2001,founded_year
 Volvo Financial Services,1,num_specialties
 Volvo Financial Services,1,num_countries
+Volvo Financial Services,[],specialties_list
+Volvo Financial Services,,countries_list
 i-Pharm Consulting,166464,follower_count
 i-Pharm Consulting,2008,founded_year
 i-Pharm Consulting,22,num_specialties
 i-Pharm Consulting,4,num_countries
+i-Pharm Consulting,"[Recruitment, Recruiter, Staffing, Pharmaceutical, Clinical Research, Medical Affairs, Drug Safety, Pharmacovigilance, Regulatory Affairs, Quality Assurance, Sales, Qualified Person, Marketing, Executive Search, Retained Search, Contract / Freelance, MedComms, Biometrics, Scientific, Tech Ops, MedDevices, Life Sciences]",specialties_list
+i-Pharm Consulting,"GB,AU,DE,US",countries_list
 Goodman Private Wealth Ltd,103,follower_count
 Goodman Private Wealth Ltd,14,company_size_on_linkedin
 Goodman Private Wealth Ltd,1987,founded_year
 Goodman Private Wealth Ltd,2,num_specialties
 Goodman Private Wealth Ltd,1,num_countries
+Goodman Private Wealth Ltd,"[Private Wealth Services, Private Family Office]",specialties_list
+Goodman Private Wealth Ltd,AU,countries_list
 IBC Recruitment,188,follower_count
 IBC Recruitment,4,company_size_on_linkedin
 IBC Recruitment,2017,founded_year
 IBC Recruitment,1,num_specialties
 IBC Recruitment,1,num_countries
+IBC Recruitment,[],specialties_list
+IBC Recruitment,AU,countries_list
 Quorum,3710,follower_count
 Quorum,65,company_size_on_linkedin
 Quorum,2003,founded_year
 Quorum,6,num_specialties
 Quorum,1,num_countries
+Quorum,"[Managed Services, Infrastructure, Security, Enterprise Mobility, Collaboration, Business Continuity]",specialties_list
+Quorum,AU,countries_list
 Hero HQ,1231,follower_count
 Hero HQ,29,company_size_on_linkedin
 Hero HQ,2013,founded_year
 Hero HQ,4,num_specialties
 Hero HQ,1,num_countries
+Hero HQ,"[First Aid Training, First Aid Assessing, CPR Training, Registered Training Organisation]",specialties_list
+Hero HQ,AU,countries_list
 The Migration - Authentic Education & Immigration Consultant for Australia,2720,follower_count
 The Migration - Authentic Education & Immigration Consultant for Australia,46,company_size_on_linkedin
 The Migration - Authentic Education & Immigration Consultant for Australia,2018,founded_year
 The Migration - Authentic Education & Immigration Consultant for Australia,4,num_specialties
 The Migration - Authentic Education & Immigration Consultant for Australia,1,num_countries
+The Migration - Authentic Education & Immigration Consultant for Australia,"[Australian Visa Consultancy, Skilled Migration, Education Consultant, Australian Immigration Consultant]",specialties_list
+The Migration - Authentic Education & Immigration Consultant for Australia,AU,countries_list
 Spaceful,3853,follower_count
 Spaceful,13,company_size_on_linkedin
 Spaceful,2016,founded_year
 Spaceful,5,num_specialties
 Spaceful,1,num_countries
+Spaceful,"[Logistics, Warehousing, 3PL, Technology, eCommerce Logistics]",specialties_list
+Spaceful,CA,countries_list
 The Media Store,6931,follower_count
 The Media Store,1997,founded_year
 The Media Store,6,num_specialties
 The Media Store,1,num_countries
+The Media Store,"[Channel planning - Media buying - Market research - Consumer profiling, Digital strategy - Search strategy \u2013 Measurement and optimisation, Content creation - Creative consulting, Programmatic & performance media, Strategy, Sponsorships - PR - event management]",specialties_list
+The Media Store,AU,countries_list
 nan,0,num_specialties
 nan,0,num_countries
+nan,,specialties_list
+nan,,countries_list
 i'ara Specialist Support Coordination,209,follower_count
 i'ara Specialist Support Coordination,16,company_size_on_linkedin
 i'ara Specialist Support Coordination,2020,founded_year
 i'ara Specialist Support Coordination,10,num_specialties
 i'ara Specialist Support Coordination,1,num_countries
+i'ara Specialist Support Coordination,"[NDIS, NIISQ, Aged Care, Innovative Care, Regional and Remote Service Delivery, Hospital Discharge Coordination, Complex Case Management, Expert Report Writing, Innovative Solutions for Service Gaps, Specialist Knowledge of NDIS Policies]",specialties_list
+i'ara Specialist Support Coordination,AU,countries_list
 Intellya,265,follower_count
 Intellya,19,company_size_on_linkedin
 Intellya,2022,founded_year
 Intellya,20,num_specialties
 Intellya,1,num_countries
+Intellya,"[software, relationship, chatbot, development, artificialintelligence, data centralization, business transformation, machine learning models , enterprise, business process automation, real-time decision making, digitalization, customization, event-based campaigns, data-driven, CRM, Big Data, hyper-personalization, solution, consulting]",specialties_list
+Intellya,RS,countries_list
 Decision Inc. Australia,1771,follower_count
 Decision Inc. Australia,37,company_size_on_linkedin
 Decision Inc. Australia,1997,founded_year
 Decision Inc. Australia,25,num_specialties
 Decision Inc. Australia,2,num_countries
+Decision Inc. Australia,"[Management Consulting, Business Intelligence (BI), Activity Based Costing, Process Improvement, Balanced Scorecard, Reporting & Analytics, Budgeting, Forecasting, Profitability, Performance Measurement, Cloud, proDacapo, QlikView, Adaptive Insights, AWS, Hosting, Data Management, Qlik Sense, Advanced Analytics, Productivity Solutions, Power BI, Tableau, SQL Server, Azure, Nintex]",specialties_list
+Decision Inc. Australia,"NZ,AU",countries_list
 The Being Group,3989,follower_count
 The Being Group,30,company_size_on_linkedin
 The Being Group,2015,founded_year
 The Being Group,28,num_specialties
 The Being Group,2,num_countries
+The Being Group,"[Branding, Digital Design & Development, Print Design, Print Management, Copywriting, PR & Social Media Management, Photography, Videography, Social Media, Digital Content, Brand Strategy, Studio, Graphic Design, Websites, Website Development, Marketing, Campaign Development, Strategy, Consulting, Communication, Learning, Training, Mentoring, Coaching, Audio, Education, E-learning, Leadership]",specialties_list
+The Being Group,"GB,AU",countries_list
 nan,0,num_specialties
 nan,0,num_countries
+nan,,specialties_list
+nan,,countries_list
 Sensei,9441,follower_count
 Sensei,153,company_size_on_linkedin
 Sensei,2017,founded_year
 Sensei,1,num_specialties
 Sensei,1,num_countries
+Sensei,[],specialties_list
+Sensei,US,countries_list
 ROLLER,24395,follower_count
 ROLLER,276,company_size_on_linkedin
 ROLLER,2010,founded_year
 ROLLER,20,num_specialties
 ROLLER,0,num_countries
+ROLLER,"[Ticketing, Digital Gift Cards, Membership, CRM, Point of Sale, PoS, Waivers, Self Serve Kiosk, RFID, Attractions, Party bookings, Mobile food and beverage, Analytics, Venue management, Multi-venue, Online ticketing, Access control, Guest feedback, Capacity management, Staff permissions]",specialties_list
+ROLLER,,countries_list
 "Parker Freeze Dry, a division of ProForm Fabrication, LLC",274,follower_count
 "Parker Freeze Dry, a division of ProForm Fabrication, LLC",2,company_size_on_linkedin
 "Parker Freeze Dry, a division of ProForm Fabrication, LLC",1,num_specialties
 "Parker Freeze Dry, a division of ProForm Fabrication, LLC",1,num_countries
+"Parker Freeze Dry, a division of ProForm Fabrication, LLC",[],specialties_list
+"Parker Freeze Dry, a division of ProForm Fabrication, LLC",US,countries_list
 Quest Software,91306,follower_count
 Quest Software,3653,company_size_on_linkedin
 Quest Software,24,num_specialties
 Quest Software,1,num_countries
+Quest Software,"[Database Management, Cloud Management, Application Management, Data Protection, Microsoft Platform Management, Performance Monitoring, Identity & Access Management, Data Backup, Data Recovery, Data Governance, Data migration, Cyber resilience, Data Intelligence, Endpoint Security, Data Migration, Disaster Recovery, Active Directory, Microsoft 365, IT Resilience, Cybersecurity, DataOps, Endpoint Management, Data Management, Patch Management]",specialties_list
+Quest Software,US,countries_list
 EP3 by Connamara Technologies,160,follower_count
 EP3 by Connamara Technologies,9,company_size_on_linkedin
 EP3 by Connamara Technologies,2022,founded_year
 EP3 by Connamara Technologies,3,num_specialties
 EP3 by Connamara Technologies,1,num_countries
+EP3 by Connamara Technologies,"[Matching Engine, Exchange Software, White label exchange]",specialties_list
+EP3 by Connamara Technologies,US,countries_list
 nan,0,num_specialties
 nan,0,num_countries
+nan,,specialties_list
+nan,,countries_list
 Sparro,7307,follower_count
 Sparro,99,company_size_on_linkedin
 Sparro,2013,founded_year
 Sparro,17,num_specialties
 Sparro,1,num_countries
+Sparro,"[SEO, Data Analysis, PPC, Conversion Optimisation, Content Marketing, Video Advertising, Social Media, Programmatic Buying, Attribution, Digital Marketing, Digital Consulting, Native Advertising, Content Production, Digital PR, Digital Strategy, e-Commerce, Partner Management]",specialties_list
+Sparro,AU,countries_list
 Henry Schein Australia,5230,follower_count
 Henry Schein Australia,222,company_size_on_linkedin
 Henry Schein Australia,4,num_specialties
 Henry Schein Australia,1,num_countries
+Henry Schein Australia,"[Dental Equipment, Dental Consumables, Large & Small Equipment Servicing, Continuing Professional Development]",specialties_list
+Henry Schein Australia,AU,countries_list
 AirTrunk,31154,follower_count
 AirTrunk,357,company_size_on_linkedin
 AirTrunk,2015,founded_year
 AirTrunk,15,num_specialties
 AirTrunk,5,num_countries
+AirTrunk,"[Data Centres, Hyperscale Data Centres, Australian Data Centres, Hong Kong Data Centres, Japan Data Centres, Malaysia Data Centres, Singapore Data Centres, APAC Data Centres, Asia Pacific & Japan Data Centres, Asia Pacific Data Centres, Sustainable Data Centres, Data Centers, Hyperscale Data Centers, Digital Infrastructure, Critical Digital Infrastructure]",specialties_list
+AirTrunk,"SG,AU,HK,MY,JP",countries_list
 Qualtrics,269637,follower_count
 Qualtrics,5481,company_size_on_linkedin
 Qualtrics,2002,founded_year
 Qualtrics,15,num_specialties
 Qualtrics,10,num_countries
+Qualtrics,"[online survey software, market research, consumer feedback, employee feedback, 360 evaluations, NPS, panels, VOC, customer experience, brand experience, employee experience, product experience, experience management, surveys, enterprise feedback management]",specialties_list
+Qualtrics,"GB,FR,SG,AU,KR,IE,DE,PL,ES,US",countries_list
 carsales,39085,follower_count
 carsales,896,company_size_on_linkedin
 carsales,10,num_specialties
 carsales,2,num_countries
+carsales,"[Technology, Digital marketplaces, Data, Insights, Product, Design, Software Development, Machine Learning, Artificial Intelligence, Media]",specialties_list
+carsales,"NZ,AU",countries_list
 Insights,113554,follower_count
 Insights,1993,founded_year
 Insights,6,num_specialties
 Insights,12,num_countries
+Insights,"[Leadership development, Team Effectiveness, Leading through change, People Development, Maximising personal effectiveness, Employee Engagment]",specialties_list
+Insights,"GB,FR,CH,SG,AU,CA,DE,PL,ES,US,BE,NL",countries_list
 H&H Group,67710,follower_count
 H&H Group,1807,company_size_on_linkedin
 H&H Group,22,num_specialties
 H&H Group,14,num_countries
+H&H Group,"[Baby nutrition and care, Beauty, Adult nutrition, Skincare, Health food, Nutrition, Probiotics, Infant Nutrition, Consumer goods, Vitamins, Supplements, Personal care, Infant milk formula, Baby care, Baby products, Children's nutrition, Children's snacks, Health and wellness, Wellness, FMCG, Organic, Sustainability]",specialties_list
+H&H Group,"FR,CN,GB,AE,CH,SG,AU,IN,IT,HK,TH,US,NZ,NL",countries_list
 Mastercard,1624975,follower_count
 Mastercard,38186,company_size_on_linkedin
 Mastercard,4,num_specialties
 Mastercard,26,num_countries
+Mastercard,"[global digital payments/commerce, technology, innovative mobile payment solutions, processing]",specialties_list
+Mastercard,"IN,CA,DE,PL,SA,GR,US,EG,BR,NL,SE,AU,IT,AT,MX,TR,TH,SG,ID,CZ,HK,KZ,PT,CO,AE,BE",countries_list
 Prospa,19654,follower_count
 Prospa,298,company_size_on_linkedin
 Prospa,2012,founded_year
 Prospa,1,num_specialties
 Prospa,2,num_countries
+Prospa,[Business Finance],specialties_list
+Prospa,"NZ,AU",countries_list
 Red Hat,1363570,follower_count
 Red Hat,19947,company_size_on_linkedin
 Red Hat,1993,founded_year
 Red Hat,10,num_specialties
 Red Hat,0,num_countries
+Red Hat,"[cloud computing, hybrid cloud management, Linux, open source, virtualization, storage, middleware, containers, mobile, OpenStack]",specialties_list
+Red Hat,,countries_list
 Nous Group,36609,follower_count
 Nous Group,726,company_size_on_linkedin
 Nous Group,1999,founded_year
 Nous Group,25,num_specialties
 Nous Group,3,num_countries
+Nous Group,"[Data & analytics, Design, Digital, Economics, First Nations, Leadership & capability, Organisational performance, Public Policy, Regulation, Strategy, Transformation & implementation, Defence & security, Education, Energy & decarbonisation, Environment & agriculture, Financial services, Government, Health & ageing, Human services, Justice & emergency management, Mining & resources, Planning & precincts, Social care, Social services, Transport & infrastructure]",specialties_list
+Nous Group,"GB,AU,CA",countries_list
 Uber,2915961,follower_count
 Uber,104092,company_size_on_linkedin
 Uber,4,num_specialties
 Uber,15,num_countries
+Uber,"[mobile, transportation, logistics, technology]",specialties_list
+Uber,"UY,CL,IN,AU,PE,SG,CA,AT,PH,MY,MX,US,BR,AR,NL",countries_list
 nan,0,num_specialties
 nan,0,num_countries
+nan,,specialties_list
+nan,,countries_list
 Intuit,763088,follower_count
 Intuit,17721,company_size_on_linkedin
 Intuit,1983,founded_year
 Intuit,1,num_specialties
 Intuit,9,num_countries
+Intuit,[],specialties_list
+Intuit,"GB,FR,SG,AU,CA,IN,US,BR,IL",countries_list
 Bristol Myers Squibb,1458804,follower_count
 Bristol Myers Squibb,37987,company_size_on_linkedin
 Bristol Myers Squibb,6,num_specialties
 Bristol Myers Squibb,5,num_countries
+Bristol Myers Squibb,"[biotechnology, innovation, great place to work, pharmaceuticals, research and development, healthcare]",specialties_list
+Bristol Myers Squibb,"CN,IE,DE,US,BE",countries_list
 ServiceNow,1025682,follower_count
 ServiceNow,28447,company_size_on_linkedin
 ServiceNow,11,num_specialties
 ServiceNow,9,num_countries
+ServiceNow,"[Service Management, Enterprise Cloud, Custom App Development, Platform, ITSM, Security Operations, Customer Service Management, ITOM, GRC, HR Service Delivery, digitize workflows]",specialties_list
+ServiceNow,"GB,IN,AU,SG,KR,IE,US,JP,NL",countries_list
 Nurse Next Door Home Care Services,19,follower_count
 Nurse Next Door Home Care Services,2,company_size_on_linkedin
 Nurse Next Door Home Care Services,1,num_specialties
 Nurse Next Door Home Care Services,0,num_countries
+Nurse Next Door Home Care Services,[],specialties_list
+Nurse Next Door Home Care Services,,countries_list
 SKY express,22360,follower_count
 SKY express,513,company_size_on_linkedin
 SKY express,2005,founded_year
 SKY express,1,num_specialties
 SKY express,0,num_countries
+SKY express,[],specialties_list
+SKY express,,countries_list
 PageGroup,261965,follower_count
 PageGroup,2152,company_size_on_linkedin
 PageGroup,1976,founded_year
 PageGroup,1,num_specialties
 PageGroup,37,num_countries
+PageGroup,[],specialties_list
+PageGroup,"LU,IN,CA,DE,PL,US,BR,JP,NL,FR,CN,CL,SE,AU,PE,IT,AT,MY,ZA,MX,TR,NZ,AR,TH,QA,CH,SG,ID,IE,TW,PT,CO,GB,AE,ES,MA,BE",countries_list
 Atlassian,1591027,follower_count
 Atlassian,18706,company_size_on_linkedin
 Atlassian,2002,founded_year
 Atlassian,9,num_specialties
 Atlassian,5,num_countries
+Atlassian,"[b2b enterprise software, bug tracker, issue tracker, enterprise wiki, corporate wiki, business wiki, team collaboration, project management, downtime communication]",specialties_list
+Atlassian,"IN,AU,US,TR,NL",countries_list
 DHL Express,513675,follower_count
 DHL Express,42568,company_size_on_linkedin
 DHL Express,9,num_specialties
 DHL Express,0,num_countries
+DHL Express,"[Express delivery, eCommerce, innovation, sustainability, technology, SME, logistics, CSR, global trade]",specialties_list
+DHL Express,,countries_list
 Marriott International,968,follower_count
 Marriott International,78,company_size_on_linkedin
 Marriott International,1927,founded_year
 Marriott International,1,num_specialties
 Marriott International,1,num_countries
+Marriott International,[],specialties_list
+Marriott International,AU,countries_list
 DHL Supply Chain,1753502,follower_count
 DHL Supply Chain,62633,company_size_on_linkedin
 DHL Supply Chain,39,num_specialties
 DHL Supply Chain,5,num_countries
+DHL Supply Chain,"[Logistics, Supply Chain Management, Consulting, Contract Manufacture, Warehousing, Order Fulfillment, Service Part Logistics, Kitting and Assembly, Managed Transportation, Reverse Logistics, Real Estate, In-Plant Logistics, Environmental Compliance, Automotive, Technology, packaging, ecommerce, mcommerce, supply chain, transport, fulfilment, packaging, real estate, commercial real estate, trucking, two man home delivery, distribution center, MRO, Service Logistics, Retail, Consumer, Energy, Chemicals, Manufacturing, Engineering, healthcare, pharma, lifescience, clinical trials]",specialties_list
+DHL Supply Chain,"GB,SG,DE,MX,US",countries_list
 Specsavers,131154,follower_count
 Specsavers,24083,company_size_on_linkedin
 Specsavers,1984,founded_year
 Specsavers,10,num_specialties
 Specsavers,5,num_countries
+Specsavers,"[Opticians, Hearing Aid Dispensers (UK and Netherlands), Domiciliary Eyecare (UK Only), Optometry, Optometrists, IT, Technology, Support Office, Marketing, Audiology]",specialties_list
+Specsavers,"GB,SE,AU,DK,NZ",countries_list
 Capgemini,6986069,follower_count
 Capgemini,294896,company_size_on_linkedin
 Capgemini,11,num_specialties
 Capgemini,13,num_countries
+Capgemini,"[Outsourcing, Process Consulting, Package Based Solutions, Custom Solution Development, Application Management, Business Information Management, Artificial Intelligence, Business Consulting, Cloud, Digital, Managed Services]",specialties_list
+Capgemini,"FR,AE,GB,SE,SG,AU,IN,JP,US,EG,BR,AR,NL",countries_list
 OneRange,1393,follower_count
 OneRange,7,company_size_on_linkedin
 OneRange,1,num_specialties
 OneRange,0,num_countries
+OneRange,[],specialties_list
+OneRange,,countries_list
