@@ -1,6 +1,6 @@
 # Company Data Analytics Dashboard
 
-A full-stack web application that analyzes and visualizes company data from LinkedIn, focusing on Best Places to Work. The project consists of a Flask backend API for data processing and a Streamlit frontend for interactive data visualization.
+A full-stack web application that analyzes and visualizes company data from LinkedIn, focusing on Best Places to Work. The project consists of a Flask backend API for data processing, a Streamlit frontend for interactive data visualization, and a comprehensive Tableau dashboard for additional insights.
 
 ## 🌟 Features
 
@@ -29,6 +29,7 @@ A full-stack web application that analyzes and visualizes company data from Link
   - Streamlit (Interactive dashboard)
   - Plotly (Data visualization)
   - Matplotlib (Word cloud visualization)
+  - Tableau (Advanced data visualization)
 - **Data Source**:
   - ProxyCurl API (LinkedIn data)
     - Company Lookup endpoint
@@ -38,6 +39,7 @@ A full-stack web application that analyzes and visualizes company data from Link
 
 - Python 3.8+
 - pip (Python package manager)
+- Tableau Desktop/Reader (for viewing .twbx file)
 
 ## 🚀 Installation
 
@@ -77,6 +79,10 @@ streamlit run visualization.py
 ```
 The dashboard will open in your default web browser.
 
+3. For Tableau visualizations:
+- Open `Final_Busa3021.twbx` using Tableau Desktop or Tableau Reader
+- The dashboard provides additional interactive visualizations and insights about the company data
+
 ## 📊 API Endpoints
 
 - `/api/company_size_distribution`: Get company size distribution
@@ -98,6 +104,7 @@ The dashboard will open in your default web browser.
 company-data-analytics/
 ├── app.py                  # Flask backend
 ├── visualization.py        # Streamlit frontend
+├── Final_Busa3021.twbx    # Tableau dashboard
 ├── data/
 │   ├── processed_data/    # Processed company data
 │   └── map/              # Map data for visualizations
