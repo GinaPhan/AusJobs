@@ -1,6 +1,16 @@
 # Company Data Analytics Dashboard
 
-A full-stack web application that analyzes and visualizes company data from LinkedIn, focusing on Best Places to Work. The project consists of a Flask backend API for data processing, a Streamlit frontend for interactive data visualization, and a comprehensive Tableau dashboard for additional insights.
+A full-stack web application that analyzes and visualizes company data from LinkedIn, focusing on Best Places to Work.
+
+🔴 **[Live Demo](https://ausjobmarket.streamlit.app)**
+
+## 📝 Overview
+
+The project consists of:
+- Flask backend API for data processing
+- Streamlit frontend for interactive data visualization
+- Comprehensive Tableau dashboard for additional insights
+- Deployed on Streamlit Community Cloud
 
 ## 🌟 Features
 
@@ -34,6 +44,8 @@ A full-stack web application that analyzes and visualizes company data from Link
   - ProxyCurl API (LinkedIn data)
     - Company Lookup endpoint
     - Company Profile endpoint
+- **Deployment**:
+  - Streamlit Community Cloud
 
 ## 📋 Prerequisites
 
