@@ -6,7 +6,7 @@ A full-stack web application that analyzes and visualizes company data from Link
 
 ## 📝 Overview
 
-The project consists of:
+The project including:
 - Flask backend API for data processing
 - Streamlit frontend for interactive data visualization
 - Comprehensive Tableau dashboard for additional insights
