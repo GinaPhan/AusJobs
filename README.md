@@ -2,7 +2,7 @@
 
 A full-stack web application that analyzes and visualizes company data from LinkedIn, focusing on Best Places to Work.
 
-🔴 **[Live Demo](https://ausjobmarket.streamlit.app)**
+🔴 **[Live Demo](https://ausjobs.streamlit.app/)**
 
 ## 📝 Overview
 
